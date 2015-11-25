@@ -1,0 +1,54 @@
+<html>
+<h1> Sequence: MinnieSunny_HybridAlexNet</h1><br><p>Th1 = 0.026</p><p>Th2 = 0.024</p><p>CN = 15</p><p> Nodes: 4</p><br><table border="1"   style="font-size:8px"    ><tr><th>Node</th><th>Tag 1</th><th>Tag 2</th><th>Tag 3</th><th>Tag 4</th><th>Tag 5</th><th>Tag 6</th><th>Tag 7</th><th>Tag 8</th><th>Tag 9</th><th>Tag 10</th></tr>
+<tr><td>1</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>window_shade</td><td>shoji</td><td>desk</td><td>file</td><td>library</td><td>shower_curtain</td><td>rule</td></tr>
+<tr><td>2</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>shoji</td><td>window_shade</td><td>desk</td><td>file</td><td>library</td><td>dining_table</td><td>desktop_computer</td></tr>
+<tr><td>3</td><td>sliding_door</td><td>prison</td><td>turnstile</td><td>shoji</td><td>window_shade</td><td>dining_table</td><td>desk</td><td>library</td><td>file</td><td>shower_curtain</td></tr>
+<tr><td>4</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>window_shade</td><td>shoji</td><td>desk</td><td>file</td><td>library</td><td>dining_table</td><td>rule</td></tr>
+</table>
+
+
+<br> <p><h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br><p>4&nbsp;&nbsp;25.0%</p><p>5&nbsp;&nbsp;75.0%</p><br></p><br><h2>Metrics Coeficients</h2><br> <table border="1"   style="font-size:8px" ><tr><th>Node</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>Metric</th></tr><tr><td>X</td><td>0.006369427</td><td>3.0</td><td>1.0264983</td><td>3.283781</td><td><0.053311974----0.47282633</td><td>55.61089</td></tr><tr><td>X</td><td>0.005973716</td><td>3.0</td><td>0.49947318</td><td>2.722091</td><td><0.053311974----0.47282633</td><td>56.67769</td></tr><tr><td>X</td><td>0.0035038542</td><td>3.0</td><td>0.4915738</td><td>2.6200304</td><td><0.053311974----0.47282633</td><td>56.863117</td></tr><tr><td>X</td><td>0.007002801</td><td>3.0</td><td>0.68618125</td><td>2.6690402</td><td><0.053311974----0.47282633</td><td>56.60539</td></tr></table><br><br><br><h2>Node Metric: 56.43927</h2><br><br>
+
+
+<br> <p>Node Categories
+<br>Node 0
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 118 &nbsp;&nbsp; 18.789808%<br>
+EO &nbsp;&nbsp; 147 &nbsp;&nbsp; 23.407644%<br>
+BO &nbsp;&nbsp; 99 &nbsp;&nbsp; 15.764332%<br>
+CR &nbsp;&nbsp; 264 &nbsp;&nbsp; 42.038216%<br>
+
+
+
+<br>Node 1
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 112 &nbsp;&nbsp; 13.381124%<br>
+KT &nbsp;&nbsp; 130 &nbsp;&nbsp; 15.531661%<br>
+EO &nbsp;&nbsp; 120 &nbsp;&nbsp; 14.336918%<br>
+BO &nbsp;&nbsp; 97 &nbsp;&nbsp; 11.589008%<br>
+CR &nbsp;&nbsp; 378 &nbsp;&nbsp; 45.16129%<br>
+
+
+
+<br>Node 2
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 112 &nbsp;&nbsp; 7.848634%<br>
+KT &nbsp;&nbsp; 330 &nbsp;&nbsp; 23.125439%<br>
+EO &nbsp;&nbsp; 53 &nbsp;&nbsp; 3.7140853%<br>
+BO &nbsp;&nbsp; 211 &nbsp;&nbsp; 14.786264%<br>
+CR &nbsp;&nbsp; 721 &nbsp;&nbsp; 50.525578%<br>
+
+
+
+<br>Node 3
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 140 &nbsp;&nbsp; 19.607843%<br>
+KT &nbsp;&nbsp; 96 &nbsp;&nbsp; 13.445379%<br>
+EO &nbsp;&nbsp; 198 &nbsp;&nbsp; 27.731094%<br>
+BO &nbsp;&nbsp; 61 &nbsp;&nbsp; 8.543418%<br>
+CR &nbsp;&nbsp; 219 &nbsp;&nbsp; 30.67227%<br>
+
+
+
+</p>
+</html>

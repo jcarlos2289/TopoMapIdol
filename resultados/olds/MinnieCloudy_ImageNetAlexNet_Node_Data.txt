@@ -1,0 +1,22 @@
+<html>
+<h1> Sequence: MinnieCloudy_ImageNetAlexNet</h1><br><p>Th1 = 0.02</p><p>Th2 = 0.03</p><p>CN = 15</p><p> Nodes: 1</p><br><table border="1"   style="font-size:8px"    ><tr><th>Node</th><th>Tag 1</th><th>Tag 2</th><th>Tag 3</th><th>Tag 4</th><th>Tag 5</th><th>Tag 6</th><th>Tag 7</th><th>Tag 8</th><th>Tag 9</th><th>Tag 10</th></tr>
+<tr><td>1</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>shoji</td><td>desk</td><td>window_shade</td><td>library</td><td>wardrobe</td><td>file</td><td>cash_machine</td></tr>
+</table>
+
+
+<br> <p><h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br><p>5&nbsp;&nbsp;100.0%</p><br></p>
+
+
+ <p>Node Categories
+<br>Node 0
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 488 &nbsp;&nbsp; 13.006396%<br>
+KT &nbsp;&nbsp; 656 &nbsp;&nbsp; 17.484009%<br>
+EO &nbsp;&nbsp; 518 &nbsp;&nbsp; 13.80597%<br>
+BO &nbsp;&nbsp; 458 &nbsp;&nbsp; 12.206823%<br>
+CR &nbsp;&nbsp; 1632 &nbsp;&nbsp; 43.496803%<br>
+
+
+
+</p>
+</html>

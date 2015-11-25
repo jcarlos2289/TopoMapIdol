@@ -1,0 +1,134 @@
+<html>
+<h1> Sequence: MinnieCloudy_ImageNetGoogLeNet</h1><br><p>Th1 = 0.009</p><p>Th2 = 0.02764</p><p>CN = 15</p><p> Nodes: 14</p><br><table border="1"   style="font-size:8px"    ><tr><th>Node</th><th>Tag 1</th><th>Tag 2</th><th>Tag 3</th><th>Tag 4</th><th>Tag 5</th><th>Tag 6</th><th>Tag 7</th><th>Tag 8</th><th>Tag 9</th><th>Tag 10</th></tr>
+<tr><td>1</td><td>sliding_door</td><td>cash_machine</td><td>medicine_chest</td><td>file</td><td>entertainment_center</td><td>pay_phone</td><td>refrigerator</td><td>safe</td><td>window_shade</td><td>prison</td></tr>
+<tr><td>2</td><td>prison</td><td>file</td><td>turnstile</td><td>desk</td><td>sliding_door</td><td>bannister</td><td>medicine_chest</td><td>window_shade</td><td>desktop_computer</td><td>dining_table</td></tr>
+<tr><td>3</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>window_shade</td><td>bookcase</td><td>desk</td><td>dining_table</td><td>file</td><td>medicine_chest</td><td>wardrobe</td></tr>
+<tr><td>4</td><td>sliding_door</td><td>prison</td><td>medicine_chest</td><td>microwave</td><td>cash_machine</td><td>turnstile</td><td>shoji</td><td>photocopier</td><td>wardrobe</td><td>file</td></tr>
+<tr><td>5</td><td>prison</td><td>turnstile</td><td>desk</td><td>window_shade</td><td>sliding_door</td><td>file</td><td>binder</td><td>shoji</td><td>bannister</td><td>shower_curtain</td></tr>
+<tr><td>6</td><td>sliding_door</td><td>bookcase</td><td>photocopier</td><td>desk</td><td>window_shade</td><td>desktop_computer</td><td>prison</td><td>file</td><td>mouse</td><td>wardrobe</td></tr>
+<tr><td>7</td><td>turnstile</td><td>prison</td><td>sliding_door</td><td>microwave</td><td>window_shade</td><td>refrigerator</td><td>file</td><td>bannister</td><td>wardrobe</td><td>library</td></tr>
+<tr><td>8</td><td>dining_table</td><td>studio_couch</td><td>window_shade</td><td>desk</td><td>home_theater</td><td>computer_keyboard</td><td>washbasin</td><td>table_lamp</td><td>switch</td><td>mouse</td></tr>
+<tr><td>9</td><td>bannister</td><td>pick</td><td>cash_machine</td><td>ski_mask</td><td>wardrobe</td><td>refrigerator</td><td>sliding_door</td><td>vending_machine</td><td>window_shade</td><td>shower_curtain</td></tr>
+<tr><td>10</td><td>sliding_door</td><td>prison</td><td>medicine_chest</td><td>microwave</td><td>turnstile</td><td>cash_machine</td><td>shoji</td><td>wardrobe</td><td>refrigerator</td><td>window_shade</td></tr>
+<tr><td>11</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>shoji</td><td>file</td><td>desk</td><td>window_shade</td><td>dining_table</td><td>bookcase</td><td>wardrobe</td></tr>
+<tr><td>12</td><td>sliding_door</td><td>prison</td><td>shoji</td><td>turnstile</td><td>window_shade</td><td>medicine_chest</td><td>refrigerator</td><td>cash_machine</td><td>file</td><td>wardrobe</td></tr>
+<tr><td>13</td><td>prison</td><td>file</td><td>turnstile</td><td>shoji</td><td>sliding_door</td><td>desk</td><td>medicine_chest</td><td>window_shade</td><td>wardrobe</td><td>dining_table</td></tr>
+<tr><td>14</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>microwave</td><td>shoji</td><td>wardrobe</td><td>window_shade</td><td>desk</td><td>medicine_chest</td><td>bannister</td></tr>
+</table>
+
+
+<br> <p><h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br><p>1&nbsp;&nbsp;21.428572%</p><p>2&nbsp;&nbsp;14.285714%</p><p>3&nbsp;&nbsp;35.714287%</p><p>4&nbsp;&nbsp;21.428572%</p><p>5&nbsp;&nbsp;7.142857%</p><br></p>
+
+
+ <p>Node Categories
+<br>Node 0
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 55 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 1
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 66 &nbsp;&nbsp; 34.02062%<br>
+EO &nbsp;&nbsp; 39 &nbsp;&nbsp; 20.103092%<br>
+CR &nbsp;&nbsp; 89 &nbsp;&nbsp; 45.87629%<br>
+
+
+
+<br>Node 2
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 90 &nbsp;&nbsp; 16.393442%<br>
+EO &nbsp;&nbsp; 86 &nbsp;&nbsp; 15.664845%<br>
+BO &nbsp;&nbsp; 112 &nbsp;&nbsp; 20.400728%<br>
+CR &nbsp;&nbsp; 261 &nbsp;&nbsp; 47.540985%<br>
+
+
+
+<br>Node 3
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 79 &nbsp;&nbsp; 40.30612%<br>
+KT &nbsp;&nbsp; 66 &nbsp;&nbsp; 33.67347%<br>
+CR &nbsp;&nbsp; 51 &nbsp;&nbsp; 26.020409%<br>
+
+
+
+<br>Node 4
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 45 &nbsp;&nbsp; 12.5%<br>
+EO &nbsp;&nbsp; 122 &nbsp;&nbsp; 33.88889%<br>
+BO &nbsp;&nbsp; 16 &nbsp;&nbsp; 4.4444447%<br>
+CR &nbsp;&nbsp; 177 &nbsp;&nbsp; 49.166668%<br>
+
+
+
+<br>Node 5
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 99 &nbsp;&nbsp; 79.2%<br>
+CR &nbsp;&nbsp; 26 &nbsp;&nbsp; 20.800001%<br>
+
+
+
+<br>Node 6
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 35 &nbsp;&nbsp; 19.553072%<br>
+CR &nbsp;&nbsp; 144 &nbsp;&nbsp; 80.44693%<br>
+
+
+
+<br>Node 7
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 39 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 8
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 66 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 9
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 52 &nbsp;&nbsp; 27.807486%<br>
+KT &nbsp;&nbsp; 69 &nbsp;&nbsp; 36.898396%<br>
+CR &nbsp;&nbsp; 66 &nbsp;&nbsp; 35.294117%<br>
+
+
+
+<br>Node 10
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 64 &nbsp;&nbsp; 8.888889%<br>
+KT &nbsp;&nbsp; 69 &nbsp;&nbsp; 9.583333%<br>
+EO &nbsp;&nbsp; 132 &nbsp;&nbsp; 18.333334%<br>
+BO &nbsp;&nbsp; 108 &nbsp;&nbsp; 15.000001%<br>
+CR &nbsp;&nbsp; 347 &nbsp;&nbsp; 48.194443%<br>
+
+
+
+<br>Node 11
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 55 &nbsp;&nbsp; 31.073444%<br>
+KT &nbsp;&nbsp; 61 &nbsp;&nbsp; 34.463276%<br>
+CR &nbsp;&nbsp; 61 &nbsp;&nbsp; 34.463276%<br>
+
+
+
+<br>Node 12
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 72 &nbsp;&nbsp; 34.285717%<br>
+EO &nbsp;&nbsp; 56 &nbsp;&nbsp; 26.666668%<br>
+CR &nbsp;&nbsp; 82 &nbsp;&nbsp; 39.04762%<br>
+
+
+
+<br>Node 13
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 161 &nbsp;&nbsp; 23.165468%<br>
+EO &nbsp;&nbsp; 83 &nbsp;&nbsp; 11.942446%<br>
+BO &nbsp;&nbsp; 123 &nbsp;&nbsp; 17.697842%<br>
+CR &nbsp;&nbsp; 328 &nbsp;&nbsp; 47.194244%<br>
+
+
+
+</p>
+</html>

@@ -1,0 +1,116 @@
+// bm.readTags("/Users/miguel/Dropbox/Investigacion/Desarrollo/MapaTopologico/tagsNewCollege/NewCollegeTags/PanoStitchOutput_LisaNewCollegeNov3_");
+		//bm.readTags("/home/jcarlos2289/workspacejava/tagsNewCollege/NewCollegePlaces/NewCollege_",0.000000001,8127);
+		//bm.readTags("/home/jcarlos2289/Documentos/tagsNewCollege/NewCollegePlaces/NewCollege_",0.000000001);
+
+		//bm.readTags("/Users/miguel/Dropbox/Investigacion/Desarrollo/MapaTopologico/tagsNewCollege/NewCollegeTags/PanoStitchOutput_LisaNewCollegeNov3_");
+		//bm.readTags("/home/jcarlos2289/workspace/tagsNewCollege/NewCollegePlaces/NewCollege_",0.000000001);
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_Places/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",205);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_Places/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",205);
+		//name = "MinnieCl1_PlacesAlexNet";
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNet/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNet/IDOL_MINNIE_Cl1_",-1.00,915, "IDOL_MINNIE_Cl1.txt",1000);
+//name = "MinnieCl1_ImageNetCaffe";
+	    //bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_Hybrid/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1183);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_Hybrid/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1183);
+//name = "MinnieCl1_HybridAlexNet";
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetGoogleNet/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1000);
+	//	bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetGoogleNet/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+//name = "DumboCl1_ImageNetGoogLeNet";
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetAlex/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetAlex/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+		//name = "MinnieCl1_ImageNetAlexNet";
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetRCNN/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetRCNN/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+        // name = "DumboCl1_ImageNetRCNN";
+		
+//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetVGG/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1000);
+	    //bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetVGG/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+         //name = "DumboCl1_ImageNetVGG";
+
+
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetMerge/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1000);
+	    //bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetMerge/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+			
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetSUM/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",1000);
+	    //bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetSUM/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetFusion/IDOL_MINNIE_Cl1_",-0.000000001,1830, "IDOL_MINNIE_Cl1_FUSION.txt",1000);
+		
+		
+//------------------------------------------------Fusion		
+//CLOUDY
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/min_cloudy_PlacesAlexNet/IDOL_MINNIE_Cl_",-0.000000001,3752, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/IDOL_MINNIE_Cl.txt",205);
+		//name = "MinnieCloudy_PlacesAlexNet";
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/min_cloudy_ImageNetAlexNet/IDOL_MINNIE_Cl_",-0.000000001,3752, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/IDOL_MINNIE_Cl.txt",205);
+		//name = "MinnieCloudy_ImageNetAlexNet";
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/min_cloudy_ImageNetCaffeNet/IDOL_MINNIE_Cl_",-0.000000001,3752, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/IDOL_MINNIE_Cl.txt",205);
+		//name = "MinnieCloudy_ImageNetCaffeNet";
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/min_cloudy_ImageNetGoogLeNet/IDOL_MINNIE_Cl_",-0.000000001,3752, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/IDOL_MINNIE_Cl.txt",205);
+		//name = "MinnieCloudy_ImageNetGoogLeNet";
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/min_cloudy_ImageNetVGG/IDOL_MINNIE_Cl_",-0.000000001,3752, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/IDOL_MINNIE_Cl.txt",205);
+		//name = "MinnieCloudy_ImageNetVGG";
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/min_cloudy_HybridAlexNet/IDOL_MINNIE_Cl_",-0.000000001,3752, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_cloudy/IDOL_MINNIE_Cl.txt",205);
+		//name = "MinnieCloudy_HybridAlexNet";
+
+//Sunny
+		
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/min_sunny_PlacesAlexNet/IDOL_MINNIE_Su_",-0.000000001,3606, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/IDOL_MINNIE_Su.txt",205);
+		//name = "MinnieSunny_PlacesAlexNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/min_sunny_ImageNetAlexNet/IDOL_MINNIE_Su_",-0.000000001,3606, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/IDOL_MINNIE_Su.txt",205);
+		//name = "MinnieSunny_ImageNetAlexNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/min_sunny_ImageNetCaffeNet/IDOL_MINNIE_Su_",-0.000000001,3606, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/IDOL_MINNIE_Su.txt",205);
+		//name = "MinnieSunny_ImageNetCaffeNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/min_sunny_ImageNetGoogLeNet/IDOL_MINNIE_Su_",-0.000000001,3606, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/IDOL_MINNIE_Su.txt",205);
+		//name = "MinnieSunny_ImageNetGoogLeNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/min_sunny_ImageNetVGG/IDOL_MINNIE_Su_",-0.000000001,3606, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/IDOL_MINNIE_Su.txt",205);
+		//name = "MinnieSunny_ImageNetVGG";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/min_sunny_HybridAlexNet/IDOL_MINNIE_Su_",-0.000000001,3606, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_sunny/IDOL_MINNIE_Su.txt",205);
+		//name = "MinnieSunny_HybridAlexNet";
+
+
+
+//Night
+		bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/min_night_PlacesAlexNet/IDOL_MINNIE_Ni_",-0.000000001,4005, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/IDOL_MINNIE_Ni.txt",205,5, 200000000);
+		name = "Minnienight_PlacesAlexNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/min_night_ImageNetAlexNet/IDOL_MINNIE_Ni_",-0.000000001,4005, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/IDOL_MINNIE_Ni.txt",205);
+		//name = "MinnieNight_ImageNetAlexNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/min_night_ImageNetCaffeNet/IDOL_MINNIE_Ni_",-0.000000001,4005, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/IDOL_MINNIE_Ni.txt",205);
+		//name = "MinnieNight_ImageNetCaffeNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/min_night_ImageNetGoogLeNet/IDOL_MINNIE_Ni_",-0.000000001,4005, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/IDOL_MINNIE_Ni.txt",205);
+		//name = "MinnieNight_ImageNetGoogLeNet";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/min_night_ImageNetVGG/IDOL_MINNIE_Ni_",-0.000000001,4005, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/IDOL_MINNIE_Ni.txt",205);
+		//name = "MinnieNight_ImageNetVGG";
+
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/min_night_HybridAlexNet/IDOL_MINNIE_Ni_",-0.000000001,4005, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie_Fusion/min_night/IDOL_MINNIE_Ni.txt",205);
+		//name = "MinnieNight_HybridAlexNet";
+
+
+		//New College
+
+
+
+		//bm.readTags("/Users/miguel/Dropbox/Investigacion/Desarrollo/MapaTopologico/tagsNewCollege/NewCollegeTags/PanoStitchOutput_LisaNewCollegeNov3_");
+		//bm.readTags("/home/jcarlos2289/Documentos/tagsNewCollege/NewCollegeTags_Clarifai/PanoStitchOutput_LisaNewCollegeNov3_",0.000000001,8127,"output.data",20);
+		bm.readTags("/home/jcarlos2289/Documentos/tagsNewCollege/NewCollegePlaces_AlexNet/NewCollege_",0.000000001,8127,"output.data",205);
+		//bm.readTags("/home/jcarlos2289/Documentos/tagsNewCollege/NewCollege_HybridAlexNet/NewCollege_",-0.000000001,8127,"output.data",1183);
+		//bm.readTags("/home/jcarlos2289/Documentos/tagsNewCollege/NewCollegePlaces_GoogLeNet/NewCollege_",0.000000001,8127,"output.data",205);
+	//	name = "NewCollege_PlacesGoogLeNet";
+		name = "NewCollege_PlacesAlexNet";
+		//name = "NewCollege_HybridAlexNet";
+		//bm.readTags("/home/jcarlos2289/Documentos/tagsNewCollege/NewCollegePlaces_AlexNet/NewCollege_",0.000000001);

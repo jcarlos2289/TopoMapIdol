@@ -1,0 +1,52 @@
+<html>
+<h1> Sequence: MinnieCloudy3_HybridAlexNet</h1><br><p>Th1 = 0.001</p><p>Th2 = 0.02</p><p>CN = 15</p><p> Nodes: 5</p><br><table border="1"   style="font-size:8px"    ><tr><th>Node</th><th>Tag 1</th><th>Tag 2</th><th>Tag 3</th><th>Tag 4</th><th>Tag 5</th><th>Tag 6</th><th>Tag 7</th><th>Tag 8</th><th>Tag 9</th><th>Tag 10</th></tr>
+<tr><td>1</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>shoji</td><td>desk</td><td>file</td><td>window_shade</td><td>library</td><td>rule</td><td>medicine_chest</td></tr>
+<tr><td>2</td><td>sliding_door</td><td>shoji</td><td>window_shade</td><td>dining_table</td><td>prison</td><td>turnstile</td><td>medicine_chest</td><td>folding_chair</td><td>window_screen</td><td>rocking_chair</td></tr>
+<tr><td>3</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>library</td><td>shoji</td><td>file</td><td>window_shade</td><td>wardrobe</td><td>shower_curtain</td><td>binder</td></tr>
+<tr><td>4</td><td>sliding_door</td><td>washbasin</td><td>abaya</td><td>cash_machine</td><td>soap_dispenser</td><td>punching_bag</td><td>medicine_chest</td><td>toilet_tissue</td><td>file</td><td>paper_towel</td></tr>
+<tr><td>5</td><td>sliding_door</td><td>turnstile</td><td>prison</td><td>shoji</td><td>shower_curtain</td><td>wardrobe</td><td>window_shade</td><td>library</td><td>file</td><td>refrigerator</td></tr>
+</table>
+
+
+<br> <p><h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br><p>1&nbsp;&nbsp;20.0%</p><p>2&nbsp;&nbsp;60.0%</p><p>4&nbsp;&nbsp;20.0%</p><br></p><br><h2>Metrics Coeficients</h2><br> <table border="1"   style="font-size:8px" ><tr><th>Node</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>Metric</th></tr><tr><td>X</td><td>0.008492569</td><td>1.0</td><td>6.6245337</td><td>3.1578288</td><td><2.5431805----3.4562104</td><td>77.03404</td></tr><tr><td>X</td><td>0.023529412</td><td>2.0</td><td>5.233497</td><td>0.8794547</td><td><2.5431805----3.4562104</td><td>73.88269</td></tr><tr><td>X</td><td>0.010695187</td><td>2.0</td><td>5.601514</td><td>1.8492826</td><td><2.5431805----3.4562104</td><td>72.65878</td></tr><tr><td>X</td><td>0.010309278</td><td>2.0</td><td>6.1905</td><td>0.73748624</td><td><2.5431805----3.4562104</td><td>73.715256</td></tr><tr><td>X</td><td>0.037037037</td><td>1.0</td><td>5.0204325</td><td>0.7351798</td><td><2.5431805----3.4562104</td><td>80.60103</td></tr></table><br><br><br><h2>Node Metric: 75.578354</h2><br><br>
+
+
+<br> <p>Node Categories
+<br>Node 0
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 116 &nbsp;&nbsp; 24.62845%<br>
+EO &nbsp;&nbsp; 132 &nbsp;&nbsp; 28.025478%<br>
+BO &nbsp;&nbsp; 47 &nbsp;&nbsp; 9.978768%<br>
+CR &nbsp;&nbsp; 176 &nbsp;&nbsp; 37.367302%<br>
+
+
+
+<br>Node 1
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 61 &nbsp;&nbsp; 71.76471%<br>
+CR &nbsp;&nbsp; 24 &nbsp;&nbsp; 28.235296%<br>
+
+
+
+<br>Node 2
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 25 &nbsp;&nbsp; 13.368983%<br>
+CR &nbsp;&nbsp; 162 &nbsp;&nbsp; 86.63102%<br>
+
+
+
+<br>Node 3
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 97 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 4
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 8 &nbsp;&nbsp; 14.814815%<br>
+CR &nbsp;&nbsp; 46 &nbsp;&nbsp; 85.18519%<br>
+
+
+
+</p>
+</html>

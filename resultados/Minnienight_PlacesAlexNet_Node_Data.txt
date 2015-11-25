@@ -1,0 +1,242 @@
+<html>
+<h1> Sequence: Minnienight_PlacesAlexNet</h1><br><p>Th1 = 0.023</p><p>Th2 = 0.05</p><p>CN = 15</p><p> Nodes: 29</p><br><table border="1"   style="font-size:8px"    ><tr><th>Node</th><th>Tag 1</th><th>Tag 2</th><th>Tag 3</th><th>Tag 4</th><th>Tag 5</th><th>Tag 6</th><th>Tag 7</th><th>Tag 8</th><th>Tag 9</th><th>Tag 10</th></tr>
+<tr><td>1</td><td>shower</td><td>kitchenette</td><td>basement</td><td>home_office</td><td>closet</td><td>kitchen</td><td>doorway_outdoor</td><td>reception</td><td>pantry</td><td>office</td></tr>
+<tr><td>2</td><td>corridor</td><td>jail_cell</td><td>lobby</td><td>basement</td><td>shower</td><td>hospital</td><td>locker_room</td><td>doorway_outdoor</td><td>subway_station_platform</td><td>alley</td></tr>
+<tr><td>3</td><td>office</td><td>home_office</td><td>classroom</td><td>waiting_room</td><td>living_room</td><td>conference_room</td><td>dorm_room</td><td>kitchenette</td><td>art_studio</td><td>dining_room</td></tr>
+<tr><td>4</td><td>staircase</td><td>attic</td><td>shower</td><td>basement</td><td>corridor</td><td>closet</td><td>jail_cell</td><td>herb_garden</td><td>bamboo_forest</td><td>fire_escape</td></tr>
+<tr><td>5</td><td>office</td><td>home_office</td><td>bookstore</td><td>reception</td><td>dorm_room</td><td>lobby</td><td>waiting_room</td><td>art_studio</td><td>kitchenette</td><td>kitchen</td></tr>
+<tr><td>6</td><td>home_office</td><td>office</td><td>bookstore</td><td>conference_room</td><td>classroom</td><td>coffee_shop</td><td>dining_room</td><td>jail_cell</td><td>shower</td><td>dorm_room</td></tr>
+<tr><td>7</td><td>dining_room</td><td>shower</td><td>waiting_room</td><td>conference_room</td><td>closet</td><td>dinette_home</td><td>coffee_shop</td><td>doorway_outdoor</td><td>corridor</td><td>office</td></tr>
+<tr><td>8</td><td>corridor</td><td>lobby</td><td>shower</td><td>hospital</td><td>jail_cell</td><td>basement</td><td>locker_room</td><td>doorway_outdoor</td><td>phone_booth</td><td>closet</td></tr>
+<tr><td>9</td><td>coffee_shop</td><td>waiting_room</td><td>kitchenette</td><td>kitchen</td><td>reception</td><td>restaurant</td><td>office</td><td>shower</td><td>home_office</td><td>living_room</td></tr>
+<tr><td>10</td><td>shower</td><td>kitchenette</td><td>doorway_outdoor</td><td>basement</td><td>kitchen</td><td>corridor</td><td>closet</td><td>home_office</td><td>jail_cell</td><td>office</td></tr>
+<tr><td>11</td><td>office</td><td>home_office</td><td>classroom</td><td>shower</td><td>art_gallery</td><td>art_studio</td><td>kitchenette</td><td>living_room</td><td>waiting_room</td><td>kitchen</td></tr>
+<tr><td>12</td><td>staircase</td><td>attic</td><td>shower</td><td>basement</td><td>corridor</td><td>closet</td><td>doorway_outdoor</td><td>fire_escape</td><td>jail_cell</td><td>museum_indoor</td></tr>
+<tr><td>13</td><td>doorway_outdoor</td><td>shower</td><td>corridor</td><td>closet</td><td>veranda</td><td>jail_cell</td><td>basement</td><td>locker_room</td><td>phone_booth</td><td>dining_room</td></tr>
+<tr><td>14</td><td>office</td><td>home_office</td><td>bookstore</td><td>classroom</td><td>conference_room</td><td>veranda</td><td>dorm_room</td><td>art_studio</td><td>dining_room</td><td>closet</td></tr>
+<tr><td>15</td><td>shower</td><td>closet</td><td>jail_cell</td><td>basement</td><td>doorway_outdoor</td><td>staircase</td><td>phone_booth</td><td>lobby</td><td>alley</td><td>corridor</td></tr>
+<tr><td>16</td><td>coffee_shop</td><td>waiting_room</td><td>kitchenette</td><td>kitchen</td><td>restaurant</td><td>reception</td><td>conference_room</td><td>office</td><td>classroom</td><td>ice_cream_parlor</td></tr>
+<tr><td>17</td><td>shower</td><td>corridor</td><td>doorway_outdoor</td><td>kitchenette</td><td>closet</td><td>kitchen</td><td>office</td><td>basement</td><td>home_office</td><td>jail_cell</td></tr>
+<tr><td>18</td><td>office</td><td>home_office</td><td>classroom</td><td>art_gallery</td><td>dorm_room</td><td>reception</td><td>shower</td><td>closet</td><td>art_studio</td><td>bookstore</td></tr>
+<tr><td>19</td><td>shower</td><td>home_office</td><td>office</td><td>basement</td><td>waiting_room</td><td>jail_cell</td><td>staircase</td><td>corridor</td><td>attic</td><td>classroom</td></tr>
+<tr><td>20</td><td>corridor</td><td>jail_cell</td><td>lobby</td><td>hospital</td><td>basement</td><td>subway_station_platform</td><td>locker_room</td><td>shower</td><td>train_station_platform</td><td>airport_terminal</td></tr>
+<tr><td>21</td><td>shower</td><td>office</td><td>home_office</td><td>waiting_room</td><td>doorway_outdoor</td><td>classroom</td><td>corridor</td><td>basement</td><td>jail_cell</td><td>closet</td></tr>
+<tr><td>22</td><td>corridor</td><td>jail_cell</td><td>basement</td><td>shower</td><td>closet</td><td>subway_station_platform</td><td>lobby</td><td>staircase</td><td>locker_room</td><td>hospital</td></tr>
+<tr><td>23</td><td>coffee_shop</td><td>food_court</td><td>restaurant</td><td>ice_cream_parlor</td><td>bakery_shop</td><td>shower</td><td>restaurant_kitchen</td><td>art_studio</td><td>bar</td><td>cafeteria</td></tr>
+<tr><td>24</td><td>shower</td><td>doorway_outdoor</td><td>coffee_shop</td><td>phone_booth</td><td>reception</td><td>jail_cell</td><td>corridor</td><td>basement</td><td>dining_room</td><td>subway_station_platform</td></tr>
+<tr><td>25</td><td>jail_cell</td><td>shower</td><td>closet</td><td>basement</td><td>lobby</td><td>doorway_outdoor</td><td>locker_room</td><td>pantry</td><td>phone_booth</td><td>corridor</td></tr>
+<tr><td>26</td><td>shower</td><td>kitchenette</td><td>basement</td><td>locker_room</td><td>kitchen</td><td>doorway_outdoor</td><td>jail_cell</td><td>corridor</td><td>closet</td><td>lobby</td></tr>
+<tr><td>27</td><td>attic</td><td>basement</td><td>staircase</td><td>corridor</td><td>closet</td><td>shower</td><td>subway_station_platform</td><td>jail_cell</td><td>bedroom</td><td>arch</td></tr>
+<tr><td>28</td><td>home_office</td><td>office</td><td>waiting_room</td><td>dorm_room</td><td>shower</td><td>dining_room</td><td>locker_room</td><td>lobby</td><td>living_room</td><td>coffee_shop</td></tr>
+<tr><td>29</td><td>shower</td><td>coffee_shop</td><td>doorway_outdoor</td><td>corridor</td><td>waiting_room</td><td>basement</td><td>restaurant</td><td>closet</td><td>phone_booth</td><td>art_studio</td></tr>
+</table>
+
+
+<br> <p><h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br><p>1&nbsp;&nbsp;27.586206%</p><p>2&nbsp;&nbsp;48.275864%</p><p>3&nbsp;&nbsp;24.137932%</p><br></p><br><h2>Metrics Coeficients</h2><br> <table border="1"   style="font-size:8px" ><tr><th>Node</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>Metric</th></tr><tr><td>X</td><td>0.015267176</td><td>2.0</td><td>12.545525</td><td>5.5081096</td><td><2.5619671----5.377651</td><td>71.480484</td></tr><tr><td>X</td><td>0.0037926675</td><td>14.0</td><td>6.1975975</td><td>2.6770802</td><td><2.5619671----5.377651</td><td>70.5266</td></tr><tr><td>X</td><td>0.016949153</td><td>2.0</td><td>3.7092338</td><td>1.0405511</td><td><2.5619671----5.377651</td><td>82.84885</td></tr><tr><td>X</td><td>0.05</td><td>2.0</td><td>2.4188862</td><td>0.5608741</td><td><2.5619671----5.377651</td><td>83.631226</td></tr><tr><td>X</td><td>0.036144577</td><td>4.0</td><td>3.5601084</td><td>1.0169222</td><td><2.5619671----5.377651</td><td>81.10945</td></tr><tr><td>X</td><td>0.02173913</td><td>3.0</td><td>6.7347007</td><td>0.43035433</td><td><2.5619671----5.377651</td><td>80.85419</td></tr><tr><td>X</td><td>0.02</td><td>2.0</td><td>4.1078234</td><td>0.40478012</td><td><2.5619671----5.377651</td><td>83.34791</td></tr><tr><td>X</td><td>0.0099502485</td><td>3.0</td><td>4.879953</td><td>2.7451625</td><td><2.5619671----5.377651</td><td>79.30962</td></tr><tr><td>X</td><td>0.011049724</td><td>2.0</td><td>6.04668</td><td>0.78605527</td><td><2.5619671----5.377651</td><td>81.79372</td></tr><tr><td>X</td><td>0.01863354</td><td>3.0</td><td>8.834389</td><td>2.415698</td><td><2.5619671----5.377651</td><td>77.02158</td></tr><tr><td>X</td><td>0.010416667</td><td>2.0</td><td>3.5829213</td><td>0.88676566</td><td><2.5619671----5.377651</td><td>83.25787</td></tr><tr><td>X</td><td>0.055555556</td><td>2.0</td><td>4.2780395</td><td>0.2963096</td><td><2.5619671----5.377651</td><td>82.66678</td></tr><tr><td>X</td><td>0.021505376</td><td>3.0</td><td>5.095143</td><td>1.6911104</td><td><2.5619671----5.377651</td><td>80.29301</td></tr><tr><td>X</td><td>0.015384615</td><td>2.0</td><td>2.590586</td><td>0.4620694</td><td><2.5619671----5.377651</td><td>84.34016</td></tr><tr><td>X</td><td>0.025641026</td><td>2.0</td><td>7.1527843</td><td>0.061545696</td><td><2.5619671----5.377651</td><td>81.72189</td></tr><tr><td>X</td><td>0.012903226</td><td>2.0</td><td>5.5531764</td><td>0.76900417</td><td><2.5619671----5.377651</td><td>82.095146</td></tr><tr><td>X</td><td>0.022058824</td><td>4.0</td><td>8.552219</td><td>2.7150223</td><td><2.5619671----5.377651</td><td>76.009285</td></tr><tr><td>X</td><td>0.041666668</td><td>4.0</td><td>4.290698</td><td>2.377352</td><td><2.5619671----5.377651</td><td>78.784584</td></tr><tr><td>X</td><td>0.013157895</td><td>2.0</td><td>4.974788</td><td>0.6593537</td><td><2.5619671----5.377651</td><td>82.601845</td></tr><tr><td>X</td><td>0.005319149</td><td>9.0</td><td>5.854336</td><td>2.5063248</td><td><2.5619671----5.377651</td><td>74.63912</td></tr><tr><td>X</td><td>0.01369863</td><td>3.0</td><td>3.8953822</td><td>1.9849771</td><td><2.5619671----5.377651</td><td>80.841805</td></tr><tr><td>X</td><td>0.008064516</td><td>2.0</td><td>4.3810906</td><td>1.7174947</td><td><2.5619671----5.377651</td><td>81.72684</td></tr><tr><td>X</td><td>0.04255319</td><td>2.0</td><td>4.274844</td><td>0.48314822</td><td><2.5619671----5.377651</td><td>82.689125</td></tr><tr><td>X</td><td>0.018348623</td><td>2.0</td><td>3.0970838</td><td>0.9693336</td><td><2.5619671----5.377651</td><td>83.30499</td></tr><tr><td>X</td><td>0.028571429</td><td>2.0</td><td>7.02896</td><td>0.41127288</td><td><2.5619671----5.377651</td><td>81.29397</td></tr><tr><td>X</td><td>0.018867925</td><td>2.0</td><td>6.9076533</td><td>0.7073397</td><td><2.5619671----5.377651</td><td>81.18597</td></tr><tr><td>X</td><td>0.125</td><td>2.0</td><td>6.072557</td><td>0.11589903</td><td><2.5619671----5.377651</td><td>80.35804</td></tr><tr><td>X</td><td>0.020618556</td><td>2.0</td><td>8.32887</td><td>1.1350226</td><td><2.5619671----5.377651</td><td>79.69031</td></tr><tr><td>X</td><td>0.015384615</td><td>2.0</td><td>7.489836</td><td>3.4601529</td><td><2.5619671----5.377651</td><td>77.34973</td></tr></table><br><br><br><h2>Node Metric: 80.233574</h2><br><br>
+
+
+<br> <p>Node Categories
+<br>Node 0
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 106 &nbsp;&nbsp; 80.91603%<br>
+BO &nbsp;&nbsp; 25 &nbsp;&nbsp; 19.08397%<br>
+
+
+
+<br>Node 1
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 99 &nbsp;&nbsp; 12.515802%<br>
+BO &nbsp;&nbsp; 11 &nbsp;&nbsp; 1.3906447%<br>
+CR &nbsp;&nbsp; 681 &nbsp;&nbsp; 86.09355%<br>
+
+
+
+<br>Node 2
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 109 &nbsp;&nbsp; 92.37288%<br>
+CR &nbsp;&nbsp; 9 &nbsp;&nbsp; 7.6271186%<br>
+
+
+
+<br>Node 3
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 25 &nbsp;&nbsp; 62.5%<br>
+CR &nbsp;&nbsp; 15 &nbsp;&nbsp; 37.5%<br>
+
+
+
+<br>Node 4
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 3 &nbsp;&nbsp; 3.6144576%<br>
+BO &nbsp;&nbsp; 50 &nbsp;&nbsp; 60.240967%<br>
+CR &nbsp;&nbsp; 30 &nbsp;&nbsp; 36.144577%<br>
+
+
+
+<br>Node 5
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 46 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 6
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 50 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 7
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 39 &nbsp;&nbsp; 19.402985%<br>
+CR &nbsp;&nbsp; 162 &nbsp;&nbsp; 80.597015%<br>
+
+
+
+<br>Node 8
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 163 &nbsp;&nbsp; 90.05525%<br>
+CR &nbsp;&nbsp; 18 &nbsp;&nbsp; 9.944751%<br>
+
+
+
+<br>Node 9
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 122 &nbsp;&nbsp; 75.7764%<br>
+KT &nbsp;&nbsp; 29 &nbsp;&nbsp; 18.012423%<br>
+CR &nbsp;&nbsp; 10 &nbsp;&nbsp; 6.21118%<br>
+
+
+
+<br>Node 10
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 176 &nbsp;&nbsp; 91.66667%<br>
+CR &nbsp;&nbsp; 16 &nbsp;&nbsp; 8.333334%<br>
+
+
+
+<br>Node 11
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 22 &nbsp;&nbsp; 61.11111%<br>
+CR &nbsp;&nbsp; 14 &nbsp;&nbsp; 38.88889%<br>
+
+
+
+<br>Node 12
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 59 &nbsp;&nbsp; 63.44086%<br>
+CR &nbsp;&nbsp; 34 &nbsp;&nbsp; 36.55914%<br>
+
+
+
+<br>Node 13
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 65 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 14
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 39 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 15
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 142 &nbsp;&nbsp; 91.61291%<br>
+CR &nbsp;&nbsp; 13 &nbsp;&nbsp; 8.387097%<br>
+
+
+
+<br>Node 16
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 73 &nbsp;&nbsp; 53.676468%<br>
+KT &nbsp;&nbsp; 43 &nbsp;&nbsp; 31.617647%<br>
+CR &nbsp;&nbsp; 20 &nbsp;&nbsp; 14.705883%<br>
+
+
+
+<br>Node 17
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 34 &nbsp;&nbsp; 47.22222%<br>
+BO &nbsp;&nbsp; 32 &nbsp;&nbsp; 44.444447%<br>
+CR &nbsp;&nbsp; 6 &nbsp;&nbsp; 8.333334%<br>
+
+
+
+<br>Node 18
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 148 &nbsp;&nbsp; 97.368416%<br>
+CR &nbsp;&nbsp; 4 &nbsp;&nbsp; 2.631579%<br>
+
+
+
+<br>Node 19
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 8 &nbsp;&nbsp; 2.1276596%<br>
+CR &nbsp;&nbsp; 368 &nbsp;&nbsp; 97.87234%<br>
+
+
+
+<br>Node 20
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 116 &nbsp;&nbsp; 52.968037%<br>
+BO &nbsp;&nbsp; 72 &nbsp;&nbsp; 32.876713%<br>
+CR &nbsp;&nbsp; 31 &nbsp;&nbsp; 14.155251%<br>
+
+
+
+<br>Node 21
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 124 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 22
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 30 &nbsp;&nbsp; 63.829784%<br>
+CR &nbsp;&nbsp; 17 &nbsp;&nbsp; 36.17021%<br>
+
+
+
+<br>Node 23
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 88 &nbsp;&nbsp; 80.73394%<br>
+CR &nbsp;&nbsp; 21 &nbsp;&nbsp; 19.266056%<br>
+
+
+
+<br>Node 24
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 35 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 25
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 53 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 26
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 8 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 27
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 86 &nbsp;&nbsp; 88.65979%<br>
+CR &nbsp;&nbsp; 11 &nbsp;&nbsp; 11.340206%<br>
+
+
+
+<br>Node 28
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 116 &nbsp;&nbsp; 59.487183%<br>
+BO &nbsp;&nbsp; 26 &nbsp;&nbsp; 13.333334%<br>
+CR &nbsp;&nbsp; 53 &nbsp;&nbsp; 27.17949%<br>
+
+
+
+</p>
+</html>

@@ -1,0 +1,337 @@
+<html>
+<h1> Sequence: MinnieCloudy_ImageNetCaffeNet</h1><br><p>Th1 = 0.01</p><p>Th2 = 0.02</p><p>CN = 15</p><p> Nodes: 42</p><br><table border="1"   style="font-size:8px"    ><tr><th>Node</th><th>Tag 1</th><th>Tag 2</th><th>Tag 3</th><th>Tag 4</th><th>Tag 5</th><th>Tag 6</th><th>Tag 7</th><th>Tag 8</th><th>Tag 9</th><th>Tag 10</th></tr>
+<tr><td>1</td><td>prison</td><td>sliding_door</td><td>turnstile</td><td>cash_machine</td><td>window_shade</td><td>medicine_chest</td><td>pay_phone</td><td>china_cabinet</td><td>window_screen</td><td>bookcase</td></tr>
+<tr><td>2</td><td>cash_machine</td><td>sliding_door</td><td>shoji</td><td>file</td><td>window_shade</td><td>wardrobe</td><td>entertainment_center</td><td>bookcase</td><td>medicine_chest</td><td>plate_rack</td></tr>
+<tr><td>3</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>window_shade</td><td>cash_machine</td><td>medicine_chest</td><td>china_cabinet</td><td>window_screen</td><td>bookcase</td><td>shoji</td></tr>
+<tr><td>4</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>library</td><td>shoji</td><td>bannister</td><td>window_shade</td><td>desk</td><td>chime</td><td>bookcase</td></tr>
+<tr><td>5</td><td>desk</td><td>dining_table</td><td>shoji</td><td>window_shade</td><td>table_lamp</td><td>home_theater</td><td>television</td><td>space_heater</td><td>wardrobe</td><td>Band_Aid</td></tr>
+<tr><td>6</td><td>pool_table</td><td>desk</td><td>dining_table</td><td>ping_pong_ball</td><td>mousetrap</td><td>screwdriver</td><td>laptop</td><td>washbasin</td><td>projector</td><td>waffle_iron</td></tr>
+<tr><td>7</td><td>shoji</td><td>window_shade</td><td>file</td><td>wardrobe</td><td>desk</td><td>shower_curtain</td><td>sliding_door</td><td>prison</td><td>window_screen</td><td>bookcase</td></tr>
+<tr><td>8</td><td>window_shade</td><td>desk</td><td>upright</td><td>radiator</td><td>desktop_computer</td><td>television</td><td>photocopier</td><td>window_screen</td><td>space_heater</td><td>rain_barrel</td></tr>
+<tr><td>9</td><td>desk</td><td>wardrobe</td><td>sliding_door</td><td>binder</td><td>table_lamp</td><td>file</td><td>switch</td><td>space_heater</td><td>shoji</td><td>carton</td></tr>
+<tr><td>10</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>shoji</td><td>refrigerator</td><td>window_shade</td><td>library</td><td>file</td><td>wardrobe</td><td>home_theater</td></tr>
+<tr><td>11</td><td>desk</td><td>bookcase</td><td>library</td><td>home_theater</td><td>dining_table</td><td>entertainment_center</td><td>bannister</td><td>prison</td><td>file</td><td>chime</td></tr>
+<tr><td>12</td><td>sliding_door</td><td>window_shade</td><td>cash_machine</td><td>shoji</td><td>turnstile</td><td>medicine_chest</td><td>guillotine</td><td>window_screen</td><td>desk</td><td>home_theater</td></tr>
+<tr><td>13</td><td>shower_curtain</td><td>turnstile</td><td>prison</td><td>sliding_door</td><td>window_shade</td><td>refrigerator</td><td>shoji</td><td>chime</td><td>window_screen</td><td>bannister</td></tr>
+<tr><td>14</td><td>sliding_door</td><td>window_shade</td><td>shoji</td><td>medicine_chest</td><td>wardrobe</td><td>microwave</td><td>entertainment_center</td><td>file</td><td>refrigerator</td><td>cash_machine</td></tr>
+<tr><td>15</td><td>cash_machine</td><td>shoji</td><td>sliding_door</td><td>bookcase</td><td>file</td><td>medicine_chest</td><td>prison</td><td>window_shade</td><td>wardrobe</td><td>plate_rack</td></tr>
+<tr><td>16</td><td>shoji</td><td>file</td><td>wardrobe</td><td>binder</td><td>turnstile</td><td>window_screen</td><td>lighter</td><td>refrigerator</td><td>shower_curtain</td><td>safe</td></tr>
+<tr><td>17</td><td>desk</td><td>sliding_door</td><td>window_shade</td><td>bookcase</td><td>cash_machine</td><td>home_theater</td><td>medicine_chest</td><td>dining_table</td><td>desktop_computer</td><td>television</td></tr>
+<tr><td>18</td><td>desk</td><td>window_shade</td><td>medicine_chest</td><td>home_theater</td><td>wardrobe</td><td>table_lamp</td><td>shoji</td><td>dining_table</td><td>file</td><td>menu</td></tr>
+<tr><td>19</td><td>matchstick</td><td>sliding_door</td><td>shoji</td><td>bannister</td><td>quill</td><td>Band_Aid</td><td>pole</td><td>envelope</td><td>paper_towel</td><td>window_shade</td></tr>
+<tr><td>20</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>shoji</td><td>chime</td><td>library</td><td>bannister</td><td>window_shade</td><td>shower_curtain</td><td>refrigerator</td></tr>
+<tr><td>21</td><td>shoji</td><td>file</td><td>wardrobe</td><td>sliding_door</td><td>prison</td><td>chiffonier</td><td>bookcase</td><td>window_shade</td><td>window_screen</td><td>desk</td></tr>
+<tr><td>22</td><td>prison</td><td>turnstile</td><td>sliding_door</td><td>shoji</td><td>window_shade</td><td>wardrobe</td><td>china_cabinet</td><td>bookcase</td><td>library</td><td>shower_curtain</td></tr>
+<tr><td>23</td><td>refrigerator</td><td>home_theater</td><td>microwave</td><td>entertainment_center</td><td>cash_machine</td><td>sliding_door</td><td>medicine_chest</td><td>space_heater</td><td>dishwasher</td><td>television</td></tr>
+<tr><td>24</td><td>studio_couch</td><td>home_theater</td><td>dining_table</td><td>computer_keyboard</td><td>desk</td><td>television</td><td>mouse</td><td>medicine_chest</td><td>bookcase</td><td>toilet_seat</td></tr>
+<tr><td>25</td><td>space_heater</td><td>ski_mask</td><td>toilet_seat</td><td>soap_dispenser</td><td>table_lamp</td><td>ping_pong_ball</td><td>plunger</td><td>wardrobe</td><td>bannister</td><td>laptop</td></tr>
+<tr><td>26</td><td>microwave</td><td>entertainment_center</td><td>medicine_chest</td><td>refrigerator</td><td>file</td><td>cash_machine</td><td>sliding_door</td><td>safe</td><td>wardrobe</td><td>home_theater</td></tr>
+<tr><td>27</td><td>sliding_door</td><td>cash_machine</td><td>window_shade</td><td>prison</td><td>shoji</td><td>turnstile</td><td>medicine_chest</td><td>wardrobe</td><td>window_screen</td><td>pay_phone</td></tr>
+<tr><td>28</td><td>sliding_door</td><td>prison</td><td>turnstile</td><td>window_screen</td><td>window_shade</td><td>shoji</td><td>medicine_chest</td><td>bookcase</td><td>wardrobe</td><td>chiffonier</td></tr>
+<tr><td>29</td><td>prison</td><td>sliding_door</td><td>shoji</td><td>turnstile</td><td>window_shade</td><td>wardrobe</td><td>bookcase</td><td>medicine_chest</td><td>window_screen</td><td>chiffonier</td></tr>
+<tr><td>30</td><td>bookcase</td><td>bannister</td><td>library</td><td>home_theater</td><td>desk</td><td>space_heater</td><td>turnstile</td><td>television</td><td>prison</td><td>shoji</td></tr>
+<tr><td>31</td><td>desktop_computer</td><td>screen</td><td>monitor</td><td>desk</td><td>computer_keyboard</td><td>table_lamp</td><td>mouse</td><td>space_heater</td><td>loudspeaker</td><td>joystick</td></tr>
+<tr><td>32</td><td>punching_bag</td><td>cash_machine</td><td>soap_dispenser</td><td>medicine_chest</td><td>washbasin</td><td>plunger</td><td>studio_couch</td><td>toilet_seat</td><td>tobacco_shop</td><td>prison</td></tr>
+<tr><td>33</td><td>shoji</td><td>sliding_door</td><td>window_shade</td><td>window_screen</td><td>medicine_chest</td><td>guillotine</td><td>prison</td><td>china_cabinet</td><td>wardrobe</td><td>shower_curtain</td></tr>
+<tr><td>34</td><td>turnstile</td><td>prison</td><td>sliding_door</td><td>medicine_chest</td><td>china_cabinet</td><td>milk_can</td><td>shoji</td><td>refrigerator</td><td>bannister</td><td>shower_curtain</td></tr>
+<tr><td>35</td><td>file</td><td>wardrobe</td><td>chiffonier</td><td>window_shade</td><td>shoji</td><td>carton</td><td>envelope</td><td>bookcase</td><td>refrigerator</td><td>crate</td></tr>
+<tr><td>36</td><td>prison</td><td>turnstile</td><td>desk</td><td>shoji</td><td>home_theater</td><td>wardrobe</td><td>table_lamp</td><td>chime</td><td>window_shade</td><td>space_heater</td></tr>
+<tr><td>37</td><td>shoji</td><td>window_shade</td><td>wardrobe</td><td>desk</td><td>sliding_door</td><td>table_lamp</td><td>matchstick</td><td>paper_towel</td><td>menu</td><td>shower_curtain</td></tr>
+<tr><td>38</td><td>shoji</td><td>sliding_door</td><td>window_shade</td><td>window_screen</td><td>prison</td><td>medicine_chest</td><td>bannister</td><td>guillotine</td><td>rocking_chair</td><td>dining_table</td></tr>
+<tr><td>39</td><td>prison</td><td>shoji</td><td>turnstile</td><td>sliding_door</td><td>wardrobe</td><td>window_shade</td><td>shower_curtain</td><td>binder</td><td>refrigerator</td><td>file</td></tr>
+<tr><td>40</td><td>shoji</td><td>file</td><td>wardrobe</td><td>chiffonier</td><td>turnstile</td><td>window_shade</td><td>binder</td><td>prison</td><td>chime</td><td>slide_rule</td></tr>
+<tr><td>41</td><td>refrigerator</td><td>sliding_door</td><td>microwave</td><td>dishwasher</td><td>studio_couch</td><td>cash_machine</td><td>medicine_chest</td><td>shoji</td><td>file</td><td>lipstick</td></tr>
+<tr><td>42</td><td>sliding_door</td><td>shoji</td><td>prison</td><td>wardrobe</td><td>shower_curtain</td><td>refrigerator</td><td>window_shade</td><td>medicine_chest</td><td>soap_dispenser</td><td>window_screen</td></tr>
+</table>
+
+
+<br> <p><h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br><p>1&nbsp;&nbsp;35.714287%</p><p>2&nbsp;&nbsp;52.38095%</p><p>3&nbsp;&nbsp;11.904762%</p><br></p>
+
+
+ <p>Node Categories
+<br>Node 0
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 7 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 1
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 114 &nbsp;&nbsp; 93.44263%<br>
+CR &nbsp;&nbsp; 8 &nbsp;&nbsp; 6.557377%<br>
+
+
+
+<br>Node 2
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 7 &nbsp;&nbsp; 31.818182%<br>
+CR &nbsp;&nbsp; 15 &nbsp;&nbsp; 68.181816%<br>
+
+
+
+<br>Node 3
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 51 &nbsp;&nbsp; 10.139165%<br>
+CR &nbsp;&nbsp; 452 &nbsp;&nbsp; 89.86083%<br>
+
+
+
+<br>Node 4
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 161 &nbsp;&nbsp; 72.19731%<br>
+BO &nbsp;&nbsp; 25 &nbsp;&nbsp; 11.210762%<br>
+CR &nbsp;&nbsp; 37 &nbsp;&nbsp; 16.591928%<br>
+
+
+
+<br>Node 5
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 1 &nbsp;&nbsp; 33.333336%<br>
+EO &nbsp;&nbsp; 2 &nbsp;&nbsp; 66.66667%<br>
+
+
+
+<br>Node 6
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 47 &nbsp;&nbsp; 46.534653%<br>
+EO &nbsp;&nbsp; 38 &nbsp;&nbsp; 37.623764%<br>
+CR &nbsp;&nbsp; 16 &nbsp;&nbsp; 15.841584%<br>
+
+
+
+<br>Node 7
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 21 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 8
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 56 &nbsp;&nbsp; 91.803276%<br>
+CR &nbsp;&nbsp; 5 &nbsp;&nbsp; 8.196721%<br>
+
+
+
+<br>Node 9
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 54 &nbsp;&nbsp; 13.917525%<br>
+CR &nbsp;&nbsp; 334 &nbsp;&nbsp; 86.08247%<br>
+
+
+
+<br>Node 10
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 55 &nbsp;&nbsp; 79.710144%<br>
+CR &nbsp;&nbsp; 14 &nbsp;&nbsp; 20.289854%<br>
+
+
+
+<br>Node 11
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 57 &nbsp;&nbsp; 76.0%<br>
+CR &nbsp;&nbsp; 18 &nbsp;&nbsp; 24.0%<br>
+
+
+
+<br>Node 12
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 3 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 13
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 127 &nbsp;&nbsp; 90.07092%<br>
+CR &nbsp;&nbsp; 14 &nbsp;&nbsp; 9.929078%<br>
+
+
+
+<br>Node 14
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 117 &nbsp;&nbsp; 95.90164%<br>
+CR &nbsp;&nbsp; 5 &nbsp;&nbsp; 4.0983605%<br>
+
+
+
+<br>Node 15
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 7 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 16
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 22 &nbsp;&nbsp; 13.017752%<br>
+BO &nbsp;&nbsp; 115 &nbsp;&nbsp; 68.04734%<br>
+CR &nbsp;&nbsp; 32 &nbsp;&nbsp; 18.934912%<br>
+
+
+
+<br>Node 17
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 58 &nbsp;&nbsp; 77.33333%<br>
+BO &nbsp;&nbsp; 17 &nbsp;&nbsp; 22.666668%<br>
+
+
+
+<br>Node 18
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 21 &nbsp;&nbsp; 65.625%<br>
+CR &nbsp;&nbsp; 11 &nbsp;&nbsp; 34.375%<br>
+
+
+
+<br>Node 19
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 23 &nbsp;&nbsp; 8.070175%<br>
+BO &nbsp;&nbsp; 1 &nbsp;&nbsp; 0.3508772%<br>
+CR &nbsp;&nbsp; 261 &nbsp;&nbsp; 91.57895%<br>
+
+
+
+<br>Node 20
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 49 &nbsp;&nbsp; 56.97674%<br>
+CR &nbsp;&nbsp; 37 &nbsp;&nbsp; 43.023254%<br>
+
+
+
+<br>Node 21
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 13 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 22
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 32 &nbsp;&nbsp; 86.48649%<br>
+CR &nbsp;&nbsp; 5 &nbsp;&nbsp; 13.513513%<br>
+
+
+
+<br>Node 23
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 54 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 24
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 38 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 25
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 59 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 26
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 26 &nbsp;&nbsp; 65.0%<br>
+CR &nbsp;&nbsp; 14 &nbsp;&nbsp; 35.0%<br>
+
+
+
+<br>Node 27
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 65 &nbsp;&nbsp; 66.32653%<br>
+CR &nbsp;&nbsp; 33 &nbsp;&nbsp; 33.67347%<br>
+
+
+
+<br>Node 28
+<br>Category &nbsp;&nbsp; Amount<br>
+PA &nbsp;&nbsp; 82 &nbsp;&nbsp; 45.810055%<br>
+KT &nbsp;&nbsp; 16 &nbsp;&nbsp; 8.938547%<br>
+CR &nbsp;&nbsp; 81 &nbsp;&nbsp; 45.251396%<br>
+
+
+
+<br>Node 29
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 46 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 30
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 10 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 31
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 89 &nbsp;&nbsp; 96.73913%<br>
+BO &nbsp;&nbsp; 3 &nbsp;&nbsp; 3.2608695%<br>
+
+
+
+<br>Node 32
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 28 &nbsp;&nbsp; 59.574467%<br>
+CR &nbsp;&nbsp; 19 &nbsp;&nbsp; 40.425533%<br>
+
+
+
+<br>Node 33
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 2 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 34
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 8 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 35
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 59 &nbsp;&nbsp; 46.45669%<br>
+CR &nbsp;&nbsp; 68 &nbsp;&nbsp; 53.543304%<br>
+
+
+
+<br>Node 36
+<br>Category &nbsp;&nbsp; Amount<br>
+EO &nbsp;&nbsp; 80 &nbsp;&nbsp; 79.207924%<br>
+CR &nbsp;&nbsp; 21 &nbsp;&nbsp; 20.79208%<br>
+
+
+
+<br>Node 37
+<br>Category &nbsp;&nbsp; Amount<br>
+BO &nbsp;&nbsp; 50 &nbsp;&nbsp; 78.125%<br>
+CR &nbsp;&nbsp; 14 &nbsp;&nbsp; 21.875%<br>
+
+
+
+<br>Node 38
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 48 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 39
+<br>Category &nbsp;&nbsp; Amount<br>
+CR &nbsp;&nbsp; 16 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 40
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 136 &nbsp;&nbsp; 100.0%<br>
+
+
+
+<br>Node 41
+<br>Category &nbsp;&nbsp; Amount<br>
+KT &nbsp;&nbsp; 1 &nbsp;&nbsp; 4.5454545%<br>
+CR &nbsp;&nbsp; 21 &nbsp;&nbsp; 95.454544%<br>
+
+
+
+</p>
+</html>
