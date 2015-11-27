@@ -476,7 +476,7 @@ float newX=0, newY=0;
 	}
 	
 	
-	public BufferedImage createImage(String name) {
+	public void createImage(String name) {
 
 		JPanel panel = this;
 		
@@ -510,7 +510,7 @@ float newX=0, newY=0;
 	    
 	    
 	    
-	    return bi;
+	    
 	}
 	
 	

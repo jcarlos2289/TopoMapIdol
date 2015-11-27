@@ -5,6 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
 //import java.io.IOException;
 import java.util.ArrayList;
@@ -60,8 +62,8 @@ public class Gui extends JFrame implements ActionListener {
 		//bm.readTags("/home/jcarlos2289/workspace/tagsNewCollege/NewCollegePlaces/NewCollege_",0.000000001);
 		
 		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_Places/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",205,5,2000000);
-		bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_PlacesAlexNet/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",205,5,2000000);
-		name = "MinnieCl1_PlacesAlexNet";
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_PlacesAlexNet/IDOL_MINNIE_Cl1_",-0.000000001,915, "IDOL_MINNIE_Cl1.txt",205,5,2000000);
+		//name = "MinnieCl1_PlacesAlexNet";
 		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNet/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
 		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNet/IDOL_MINNIE_Cl1_",-1.00,915, "IDOL_MINNIE_Cl1.txt",1000);
 //name = "MinnieCl1_ImageNetCaffe";
@@ -91,7 +93,10 @@ public class Gui extends JFrame implements ActionListener {
 	    //bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Dumbo/dum_cloudy1/dum_cloudy1_ImageNetSUM/IDOL_DUMBO_Cl1_",-0.000000001,917,"IDOL_DUMBO_Cl1.txt",1000);
 		
 		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_ImageNetFusion/IDOL_MINNIE_Cl1_",-0.000000001,1830, "IDOL_MINNIE_Cl1_FUSION.txt",1000);
-				
+			
+		//----------------------------Individuales----------------------------------------------------------------
+		
+		//Cloudy
 		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/min_cloudy1_HybridAlexNet/IDOL_MINNIE_Cl1_", -0.00000001, 915, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy1/IDOL_MINNIE_Cl1.txt",1183, 5, 2000000000);
 		//name= "MinnieCloudy1_HybridAlexNet";
 		
@@ -103,6 +108,38 @@ public class Gui extends JFrame implements ActionListener {
 		
 		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy4/min_cloudy4_HybridAlexNet/IDOL_MINNIE_Cl4_", -0.00000001, 975, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_cloudy4/IDOL_MINNIE_Cl4.txt",1183, 5, 2000000000);
 		//name= "MinnieCloudy4_HybridAlexNet";
+		
+		
+		//Night
+		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night1/min_night1_HybridAlexNet/IDOL_MINNIE_Ni1_", -0.00000001, 1039, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night1/IDOL_MINNIE_Ni1.txt",1183, 5, 2000000000);
+		//name= "MinnieNight1_HybridAlexNet";
+
+		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night2/min_night2_HybridAlexNet/IDOL_MINNIE_Ni2_", -0.00000001, 1181, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night2/IDOL_MINNIE_Ni2.txt",1183, 5, 2000000000);
+		//name= "MinnieNight2_HybridAlexNet";
+
+		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night3/min_night3_HybridAlexNet/IDOL_MINNIE_Ni3_", -0.00000001, 921, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night3/IDOL_MINNIE_Ni3.txt",1183, 5, 2000000000);
+		//name= "MinnieNight3_HybridAlexNet";
+
+		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night4/min_night4_HybridAlexNet/IDOL_MINNIE_Ni4_", -0.00000001, 864, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night4/IDOL_MINNIE_Ni4.txt",1183, 5, 2000000000);
+		//name= "MinnieNight4_HybridAlexNet";
+
+
+		//Sunny
+				
+		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny1/min_sunny1_HybridAlexNet/IDOL_MINNIE_Su1_", -0.00000001, 853, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny1/IDOL_MINNIE_Su1.txt",1183, 5, 2000000000);
+		//name= "MinnieSunny1_HybridAlexNet";
+				
+		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny2/min_sunny2_HybridAlexNet/IDOL_MINNIE_Su2_", -0.00000001, 849, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny2/IDOL_MINNIE_Su2.txt",1183, 5, 2000000000);
+		//name= "MinnieSunny2_HybridAlexNet";
+
+		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny3/min_sunny3_HybridAlexNet/IDOL_MINNIE_Su3_", -0.00000001, 1014, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny3/IDOL_MINNIE_Su3.txt",1183, 5, 2000000000);
+		//name= "MinnieSunny3_HybridAlexNet";
+
+		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny4/min_sunny4_HybridAlexNet/IDOL_MINNIE_Su4_", -0.00000001, 890, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny4/IDOL_MINNIE_Su4.txt",1183, 5, 2000000000);
+		//name= "MinnieSunny4_HybridAlexNet";
+		
+			
+		
 		
 //------------------------------------------------Fusion		
 //CLOUDY
@@ -349,7 +386,7 @@ public class Gui extends JFrame implements ActionListener {
 			DATARESUME="Th1;Th2;CN;Nodes;Edges;Metric\n";
 		else
 			DATARESUME="";*/
-		/*
+		
 		float incremento = (float) 0.001;
 		float th1 = (float) 0.001;
 		float th2 = (float) 0.010;
@@ -393,7 +430,7 @@ public class Gui extends JFrame implements ActionListener {
 		}
 		g.setVisible(false);
 		g.dispose();
-	*/
+	
 		/*
 		System.out.println("Width-X= "+g.cm.getMaxWidth());
 		System.out.println("Heigth-Y= "+g.cm.getMaxHeight());
@@ -422,8 +459,8 @@ public class Gui extends JFrame implements ActionListener {
 			cm.repaint();
 			cm.showNodeDetails();
 			cm.showMapInfo();
-			String DATARESUME ="Th1;Th2;CN;Nodes;Edges;Metric\n";
-			float metric = bm.map.getMapMetric(cm.MaxDistance());
+			//String DATARESUME ="Th1;Th2;CN;Nodes;Edges;Metric\n";
+		//	float metric = bm.map.getMapMetric(cm.MaxDistance());
 			//DATARESUME+=bm.threshold1+ ";"+ bm.threshold2+ ";"+bm.cutNode+ ";"+bm.map.nodes.size()+ ";"+bm.map.edges.size()+ ";"+metric+"\n";
 			//FileMethods.saveFile(DATARESUME, name+"_MetricsData", true);
 			return;
