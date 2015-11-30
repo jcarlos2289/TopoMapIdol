@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
+
+
 //import org.jfree.data.category.CategoryDataset;
 //import org.jfree.data.category.DefaultCategoryDataset;
 
@@ -611,17 +613,19 @@ public class Node {
 		LinkedHashMap<String, Float> sortedByValue = orderHashMap(histoMean, true);
 		HashMap<String,Float> presenceData = new HashMap<String,Float>();
 		
+		//ordeno el histomean para sacar los 10 primeros valores(tags con prob. mayor)
 		int h = 0;
 		for(Entry<String, Float> e : sortedByValue.entrySet()){
 			mean10.add(e.getKey());
 			if(++h ==10) 
 				break;
-			
-		}
+			}
 		
 		ImageTags imagesAux;
 		LinkedHashMap<String, Float> orderImageTags;
 		// int imgSize = images.size();
+		
+		//busco los 10 mayores tags en las imagenes del nodo
 		for (int i = 0; i < images.size(); ++i) {
 			imagesAux = images.get(i);
 			HashMap<String, Float> datAux = new HashMap<String, Float>();
@@ -637,7 +641,7 @@ public class Node {
 				
 			}
 			presenceData.put(imagesAux.imageName, getTagPresence(mean10, mean10Image));
-					
+			//busco por cada imagen cuantos de los 10 tags del HistoMean estan en los 10 de la imagen		
 		}
 		int p = 10;
 	for (int i = 0; i< mean10.size(); i++) {
@@ -797,6 +801,68 @@ public class Node {
 		return text;
 
 	}
+	
+	public String getTagCloudImage() {
+		// TODO Auto-generated method stub
+		
+		//Evaluar si usar el HistoMean Ponderado o usar un HistoMean sin las ponderaciones de CutNodes
+		//order the histoMean
+		
+		
+		
+		
+				ArrayList<String> mean100 = new ArrayList<String>();
+				ArrayList<Float>  mean100fl =new ArrayList<Float>();
+				LinkedHashMap<String, Float> sortedByValue = orderHashMap(histoMean, true);
+				//HashMap<String, Float> tags = new HashMap<String, Float>();
+				HashMap<String, Float> tagForCloud = new HashMap<String, Float>();
+							
+				int h = 0;
+				for(Entry<String, Float> e : sortedByValue.entrySet()){
+					///tags.put(e.getKey(), e.getValue());
+					mean100.add(e.getKey());
+					mean100fl.add(e.getValue());
+					if(++h ==100) 
+						break;
+					}
+				
+				
+				float max , min;
+				max = (mean100fl.get(0));
+				min = (mean100fl.get(99));
+				
+			
+				for (int i = 0; i < mean100.size(); i++) {
+					tagForCloud.put(mean100.get(i), ((mean100fl.get(i)-min)/(max-min))*100000000);
+					//System.out.printf("Value = %.8f\t Key= %s \t\t\tNorm= %.3f\n",mean100fl.get(i),mean100.get(i), ((mean100fl.get(i)-min)/(max-min))*100000000);
+				}
+				
+				
+				
+				
+				/*mean100fl.get(i)
+				for (int i = 0; i < mean100.size(); i++) {
+					tagForCloud.put(mean100.get(i),((mean100fl.get(i)-min)/(max-min))*100);
+					System.out.printf("Key = %s \t\t\tOriginal= %.8f\t\t\tValue= %.2f\n", mean100.get(i),mean100fl.get(i),tagForCloud.get(mean100.get(i)));
+				}*/
+				
+				/*System.out.println("--------------------------------------------------------\n");
+				
+				for(Entry<String, Float> e : tags.entrySet()){
+					tagForCloud.put(e.getKey(), ((e.getValue()-min)/(max-min))*100000000);
+					System.out.printf("Key = %s \t\t\tOriginal= %.8f\t\t\tValue= %.2f\n", e.getKey(),e.getValue(),tagForCloud.get(e.getKey()));
+				}
+				*/
+				
+				
+				
+				
+		
+		
+		
+		return null;
+	}
+	
 	/*
 	public CategoryDataset getDataset(){
 		String elem;
@@ -863,7 +929,10 @@ public class Node {
 		
        return dataset;
 	}*/
-				
+		
+	
+	
+	
 	public String getNodesContent() {
 		String nodeInfo = "";
 		//Verificar lo que imprime
@@ -996,8 +1065,10 @@ public class Node {
 		
 		return D;
 	}
-			
+	/*---------------No Usada Para la metrica---------------------------------------------------------------------------------------------
 	public String[] getNodeMetric(ArrayList<Edge> edges, ArrayList<Node> nodes, int nClass,float height, float width){
+		
+		
 		int categoriesCant= getCategoryAmount();
 		float A  =0;
 		float B = 0;
@@ -1101,6 +1172,7 @@ public class Node {
 		
 		
 	}
+	------------------------------------------------------------------------------------------------------------------------------------------------*/
 	
 	public String printNodeMet(int n, ArrayList<Edge> edges){
 		String text="";
@@ -1141,4 +1213,8 @@ public class Node {
 			return name.compareToIgnoreCase(h.name);
 		}
 	}
+
+
+
+
 }

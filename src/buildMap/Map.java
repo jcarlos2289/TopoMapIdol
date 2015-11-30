@@ -3,6 +3,10 @@ package buildMap;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 public class Map {
 	ArrayList<Node> nodes;
@@ -242,8 +246,7 @@ public class Map {
 		table +="<h2>D= "+ AvgCoef.getD()+"  D<sub>Norm</sub>=  "+AvgCoefNorm.getD()+"</h2>";
 		table +="<h2>C= "+ C+ "  C<sub>Norm</sub>=  "+Cn+"</h2>";
 		table +="<h2>E= "+ E+ "  E<sub>Norm</sub>=  "+En+"</h2>";
-		
-		
+			
 				
 		
 		float metric = getMapMetric(dmax);
@@ -287,6 +290,66 @@ public class Map {
 		coefE=E;
 				
 		return metric;
+	}
+	
+	public String getMapInfo(String name, String th1, String th2, String cutNode){
+		
+				ArrayList<Integer> classCount = new ArrayList<Integer>();
+				String cats ="Node Categories\n";
+				String text = "<html>\n";
+				text +="<h1> Sequence: "+ name+"</h1><br>";
+				text += "<p>Th1 = "+ th1 + "</p><p>Th2 = " +th2 + "</p><p>CN = "+ cutNode+"</p><p> Nodes: "+this.getMapSize()+"</p><br>";
+							
+				text += "<table border=\"1\"   style=\"font-size:8px\"    >";
+				text += "<tr><th>Node</th>";
+				for(int i = 0;i < 10; ++i )
+					text+="<th>Tag "+ String.valueOf(i+1)+ "</th>";
+				text +="</tr>\n";
+				
+				
+				int h = 0;
+				
+				for (Iterator<Node> iterator = nodes.iterator(); iterator.hasNext();) {
+					
+					Node node =  iterator.next();
+					classCount.add(node.getCategoryAmount());
+					ArrayList<String> nodetags = node.getTop10Nodes();
+					text +="<tr>";
+					text +="<td>" + ++h +"</td>";
+					for (String tag : nodetags) {
+						text +="<td>"+tag +"</td>";
+					}
+					text +="</tr>\n";
+					
+					cats+="<br>Node "+(h-1)+"\n";
+					cats += node.countCategory();
+					cats+= "\n\n\n";
+				
+					
+				}
+				
+				Collections.sort(classCount);
+				
+				String catPercentage="<h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br>";
+				
+				Set<Integer> data = new HashSet<>(classCount);
+		    
+				for(int dat: data){
+					int  val = Collections.frequency(classCount, dat);
+					catPercentage+="<p>"+dat+"&nbsp;&nbsp;"+(((float)val)*100/nodes.size())+"%</p>";
+				}
+				
+				catPercentage+="<br>";
+						
+				text += "</table>";
+				text +="\n\n\n<br> <p>" +catPercentage+"</p><br>";
+										
+				text +="\n\n\n<br> <p>" +cats+"</p>";
+				text += "\n</html>";
+		
+		
+		return text;
+		
 	}
 	
 	

@@ -2,6 +2,8 @@ package buildMap;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
 //import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -12,14 +14,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -41,7 +40,7 @@ public class CanvasMap extends JPanel implements MouseListener {
 	double zoomFactor=28;
 	double xdesp, ydesp;
 	int radius=10;
-	JDialog tags=null, nodeInfo=null, top=null;
+	JDialog tags=null, nodeInfo=null, top=null, nodeDetailsDialog =null, mapInfoDialog=null, tagCloudDialog=null;
 	//JDialog graf=null;
 	
 	public CanvasMap (Gui ig) {
@@ -111,6 +110,7 @@ public class CanvasMap extends JPanel implements MouseListener {
 		}
 		g.setColor(new Color(0,0,255));
 		if (gui.mapGenerated && gui.showMap) {
+		
 			if (gui.nodesMode && gui.selectedNode!=-1) {
 				Node selectn = gui.bm.map.nodes.get(gui.selectedNode);
 				for (ImageTags img:selectn.images) {
@@ -138,15 +138,19 @@ public class CanvasMap extends JPanel implements MouseListener {
 	                     nodeInfo.dispose();
 	                    // graf.dispose();
 	                     top.dispose();
+	                     tagCloudDialog.dispose();
 	                     tags=null;
 	                     nodeInfo=null;
 	                    // graf=null;
 	                     top=null;
+	                     tagCloudDialog=null;
 					}
 					showInfo(selectn);
 					gui.selectNodeChanged=false;
 				}
 			}
+			
+			
 			else {
 				for (Node n:gui.bm.map.nodes) {
 					x=(int)(zoomFactor*(n.representative.xcoord-xmean)+xdesp);
@@ -161,8 +165,52 @@ public class CanvasMap extends JPanel implements MouseListener {
 					g2d.drawLine(xAnt+radius/2, yAnt+radius/2, x+radius/2, y+radius/2);
 				}
 			}
+			
+			
+			
 		}
 		//else{
+		
+		if(gui.tagMode && gui.mapGenerated){
+			if(gui.selectTagChanged && !gui.selectedTag.equals(null)){
+				//Proceso para mostrar los highTags
+				
+				ArrayList<String> aux;
+				
+				for(Node n:gui.bm.map.nodes){
+					aux = n.getTop10Nodes();
+					if(aux.contains(gui.selectedTag)){
+						x=(int)(zoomFactor*(n.representative.xcoord-xmean)+xdesp);
+						y=(int)(-zoomFactor*(n.representative.ycoord-ymean)+ydesp);
+				        g.drawOval(x, y, radius, radius);
+						g.setColor(new Color(0,255,0));
+				        g.drawRect(x, y, radius, radius);
+				        g.fillRect(x, y, radius, radius);
+				        int h = aux.indexOf(gui.selectedTag)+1;
+				        g.setColor(Color.BLACK);
+				        
+				        Font oldFont=getFont();
+				        Font fuente=new Font("Monospaced", Font.PLAIN, 10);
+				        g.setFont(fuente);
+				        g.drawString(String.valueOf(h), x+1, y+10);
+				        g.setFont(oldFont);
+				        g.drawString(gui.selectedTag, 361, 100);
+				        
+				        
+					}
+				}
+				
+				gui.selectTagChanged=false;
+								
+				
+			}
+		}	
+		
+		
+		
+		
+		
+		
 			if (gui.showCluster){
 				
 				int colors[][] = new int[gui.km.k][3];
@@ -258,20 +306,98 @@ public class CanvasMap extends JPanel implements MouseListener {
 		top.setSize(450, 300);
 		top.setLocation(850,400);
 		top.setVisible(true);
+		
+		 tagCloudDialog =new JDialog(gui);
+		 tagCloudDialog.setTitle("Tags Cloud");
+		 tagCloudDialog.setSize(new Dimension(600,600));
+	     
+		 JLabel lab =  new JLabel(new ImageIcon(sel.getTagCloudImage()));
+		 tagCloudDialog.add(lab);
+		 tagCloudDialog.setLocation(850,0);
+		// tagCloudDialog.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		 tagCloudDialog.setVisible(true);
+		
 			
 		
 	}
 	
 	public void showMapInfo(){
-		JDialog message = new JDialog(gui);
-		message.setSize(700, 500);
+		if(mapInfoDialog!=null){
+			mapInfoDialog.dispose();
+			mapInfoDialog=null;
+		}	
+			mapInfoDialog = new JDialog(gui);
+			mapInfoDialog.setSize(700, 500);
+			
+			JLabel dat = new JLabel(gui.bm.map.printMetricTable(MaxDistance()));
+			JScrollPane scroll = new JScrollPane(dat);
+			mapInfoDialog.setTitle("Map Metrics Information");
+			mapInfoDialog.setContentPane(scroll);
+			mapInfoDialog.setVisible(true);
 		
-		JLabel dat = new JLabel(gui.bm.map.printMetricTable(MaxDistance()));
-		JScrollPane scroll = new JScrollPane(dat);
-		message.setTitle("Map Metrics Information");
-		message.setContentPane(scroll);
-		message.setVisible(true);
 	}
+	
+	
+	public void showNodeDetails() {
+		if(nodeDetailsDialog!=null){
+			nodeDetailsDialog.dispose();
+			nodeDetailsDialog=null;
+		}
+		
+		String text = gui.bm.map.getMapInfo(gui.name, String.valueOf(gui.bm.threshold1), String.valueOf(gui.bm.threshold2), String.valueOf(gui.bm.cutNode));
+			
+		nodeDetailsDialog = new JDialog(gui);
+		nodeDetailsDialog.setSize(450, 300);
+		
+		JLabel dat = new JLabel(text);
+		JScrollPane scroll = new JScrollPane(dat);
+		nodeDetailsDialog.setTitle("Top10 Nodes Tags");
+		nodeDetailsDialog.setContentPane(scroll);
+		nodeDetailsDialog.setVisible(true);
+		
+		//FileMethods.saveFile(text, gui.name+"_Node_Data", false);
+			
+	}
+	
+	
+	public void createImage(String name) {
+
+		JPanel panel = this;
+		
+		 File miDir = new File(".");
+	     String c = miDir.getAbsolutePath();
+
+	     //elimino el punto (.) nombre del archivo(virtual) que cree para obtener la ruta de la carpeta del proyecto
+	     String ruta = c.substring(0, c.length() - 1);
+         ruta += "resultados/" + name.trim() + ".png";
+		
+		File fichero = new File(ruta);
+	    int w = panel.getWidth();
+	    int h = panel.getHeight();
+	    
+	    w= img2.getIconWidth();
+	    h= img2.getIconHeight();
+	    
+	    BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
+	    Graphics2D g = bi.createGraphics();
+	    panel.paint(g);
+	    
+	    try {
+			ImageIO.write(bi, "png", fichero);
+			System.out.println("Image " +name +" Saved");
+		} catch (IOException e) {
+			System.out.println("Writing Error");
+		}
+	      
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	/*
 	public void  createChart(Node sel){
@@ -328,11 +454,13 @@ public class CanvasMap extends JPanel implements MouseListener {
 				nodeInfo.dispose();
 				//graf.dispose();
 				top.dispose();
+				tagCloudDialog.dispose();
 				gui.nodes.setSelectedIndex(0);
 				tags=null;
 				nodeInfo=null;
 				//graf=null;
 				top = null;
+				tagCloudDialog=null;
 			}
 			for (Node n:gui.bm.map.nodes) {
 				if (distance(evt, n) < radius) {
@@ -359,159 +487,7 @@ public class CanvasMap extends JPanel implements MouseListener {
 	public void mouseExited(MouseEvent e) {
 	}
 
-	public void showNodeDetails() {
-		// TODO Auto-generated method stub
-		ArrayList<Integer> classCount = new ArrayList<Integer>();
-		String cats ="Node Categories\n";
-		String text = "<html>\n";
-		text +="<h1> Sequence: "+ gui.name+"</h1><br>";
-		text += "<p>Th1 = "+ gui.bm.threshold1 + "</p><p>Th2 = " +gui.bm.threshold2 + "</p><p>CN = "+ gui.bm.cutNode+"</p><p> Nodes: "+gui.bm.map.getMapSize()+"</p><br>";
-					
-		text += "<table border=\"1\"   style=\"font-size:8px\"    >";
-		text += "<tr><th>Node</th>";
-		for(int i = 0;i < 10; ++i )
-			text+="<th>Tag "+ String.valueOf(i+1)+ "</th>";
-		text +="</tr>\n";
-			
-		String table2 ="<h2>Metrics Coeficients</h2><br> "
-				+ "<table border=\"1\"   style=\"font-size:8px\" >"
-				+ "<tr><th>Node</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>Metric</th></tr>";
-		int h = 0;
-		
-		
-float newX=0, newY=0;
-		
-		newX = (float) (((float)(img2.getIconWidth() -xdesp))/zoomFactor +xmean);
-		newY = (float) (((float)(img2.getIconHeight() -ydesp))/zoomFactor +ymean);
-		ArrayList<Float> nodeMetrics = new ArrayList<Float>();
-		
-		for (Iterator<Node> iterator = gui.bm.map.nodes.iterator(); iterator.hasNext();) {
-			
-			Node node =  iterator.next();
-			classCount.add(node.getCategoryAmount());
-			ArrayList<String> nodetags = node.getTop10Nodes();
-			text +="<tr>";
-			text +="<td>" + ++h +"</td>";
-			for (String tag : nodetags) {
-				text +="<td>"+tag +"</td>";
-			}
-			text +="</tr>\n";
-			
-			cats+="<br>Node "+(h-1)+"\n";
-			cats += node.countCategory();
-			cats+= "\n\n\n";
-			String met[]= node.getNodeMetric(gui.bm.map.edges, gui.bm.map.nodes, gui.bm.nClass, newY,newX);
-			table2 += met[0];
-			nodeMetrics.add(Float.parseFloat(met[1]));
-			
-		}
-		
-		table2+="</table><br><br><br>";
-		
-		float mapMetric=0;
-		
-		for (Float met : nodeMetrics) {
-			mapMetric += met/gui.bm.map.nodes.size();
-		}
-		
-		table2+="<h2>Node Metric: "+mapMetric+"</h2><br><br>";
-		
-		
-		
-		
-		Collections.sort(classCount);
-		
-		String catPercentage="<h2>Categories Count Percentage</h2><br><p>Cat_Amout &nbsp;&nbsp; %</p><br>";
-		
-		Set<Integer> data = new HashSet<>(classCount);
-    
-		for(int dat: data){
-			int  val = Collections.frequency(classCount, dat);
-			catPercentage+="<p>"+dat+"&nbsp;&nbsp;"+(((float)val)*100/gui.bm.map.nodes.size())+"%</p>";
-			
-		}
-		
-		catPercentage+="<br>";
-		
-		
-		//tags.lastIndexOf(g)
-       /* 
-        int val, index;
-        for (String key : data) {
-            //System.out.println(key + " : " + Collections.frequency(tags, key));
-            //dataCount += key + "-" + Collections.frequency(tags, key) + "\n";
-            val = Collections.frequency(tags, key);
-            index = tags.lastIndexOf(key);
-            if (val > threshold) {
-                //probs.add(key + "-" + Collections.frequency(tags, key) + "\n");
-                sortTag.add(key);
-                probs.add(key + "-" + val + "\n");
-                tagProb.add(new Tag(key, val, (double) tagSingleProbSum.get(index)));
-            }
-        }*/
-		
-				
-		text += "</table>";
-		text +="\n\n\n<br> <p>" +catPercentage+"</p><br>";
-		
-		text+=table2;
-		
-		text +="\n\n\n<br> <p>" +cats+"</p>";
-		text += "\n</html>";
-		
-		
-		
-		JDialog message = new JDialog(gui);
-		message.setSize(450, 300);
-		
-		JLabel dat = new JLabel(text);
-		JScrollPane scroll = new JScrollPane(dat);
-		message.setTitle("Top10 Nodes Tags");
-		message.setContentPane(scroll);
-		message.setVisible(true);
-		
-		FileMethods.saveFile(text, gui.name+"_Node_Data", false);
-			
-		
-	}
 	
-	
-	public void createImage(String name) {
-
-		JPanel panel = this;
-		
-		
-		
-		 File miDir = new File(".");
-	     String c = miDir.getAbsolutePath();
-
-	     //elimino el punto (.) nombre del archivo(virtual) que cree para obtener la ruta de la carpeta del proyecto
-	     String ruta = c.substring(0, c.length() - 1);
-         ruta += "resultados/" + name.trim() + ".png";
-		
-		File fichero = new File(ruta);
-	    int w = panel.getWidth();
-	    int h = panel.getHeight();
-	    
-	    w= img2.getIconWidth();
-	    h= img2.getIconHeight();
-	    
-	    BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
-	    Graphics2D g = bi.createGraphics();
-	    panel.paint(g);
-	    
-	    try {
-			ImageIO.write(bi, "png", fichero);
-			System.out.println("Image " +name +" Saved");
-		} catch (IOException e) {
-			System.out.println("Writing Error");
-		}
-	    
-	    
-	    
-	    
-	    
-	}
 	
 	
 	

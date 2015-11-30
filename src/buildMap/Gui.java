@@ -4,12 +4,15 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
+import java.util.Set;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
 //import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+
 
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
@@ -32,14 +35,16 @@ public class Gui extends JFrame implements ActionListener {
 	private CanvasMap cm;
 	int width = 1000, height = 900;
 	JButton process, clusterbt, clusterCoefBt;
-	JCheckBox originalButton, graphButton, backButton, showNodes,clusters;
+	JCheckBox originalButton, graphButton, backButton, showNodes,clusters,highTags;
 	JTextField th1, th2, th3;
 	JComboBox<String> nodes;
+	JComboBox<String> tagList;
 	double threshold1, threshold2;
 	int cutNode;
 	boolean original = true, showMap = true, background = true,
-			mapGenerated = false, nodesMode = false, selectNodeChanged = false, showCluster = false;
-	int selectedNode = -1;
+			mapGenerated = false, nodesMode = false, selectNodeChanged = false, showCluster = false, tagMode = false, selectTagChanged = false;
+	int selectedNode = -1 ;
+	String selectedTag = null;
 	
 	BuildMap bm;
 	Kmeans km;
@@ -47,11 +52,11 @@ public class Gui extends JFrame implements ActionListener {
 	
 	 JMenu jmOperations, jmShows;
 	 JMenuItem jmiGetCluster, jmiGenCluster, jmiCapture, jmiGenMap;
-     JCheckBoxMenuItem originalCB, graphCB, backCB, showNodesCB, clustersCB;
+     JCheckBoxMenuItem originalCB, graphCB, backCB, showNodesCB, clustersCB, highTagsCB;
 	
 	public Gui() {
-		threshold1 = 0.026;
-		threshold2 = 0.024;
+		threshold1 = 0.001;
+		threshold2 = 0.01;
 		cutNode = 15;
 		bm = new BuildMap(threshold1, threshold2, cutNode);
 		// bm.readTags("/Users/miguel/Dropbox/Investigacion/Desarrollo/MapaTopologico/tagsNewCollege/NewCollegeTags/PanoStitchOutput_LisaNewCollegeNov3_");
@@ -111,22 +116,22 @@ public class Gui extends JFrame implements ActionListener {
 		
 		
 		//Night
-		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night1/min_night1_HybridAlexNet/IDOL_MINNIE_Ni1_", -0.00000001, 1039, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night1/IDOL_MINNIE_Ni1.txt",1183, 5, 2000000000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night1/min_night1_HybridAlexNet/IDOL_MINNIE_Ni1_", -0.00000001, 1039, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night1/IDOL_MINNIE_Ni1.txt",1183, 5, 2000000000);
 		//name= "MinnieNight1_HybridAlexNet";
 
-		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night2/min_night2_HybridAlexNet/IDOL_MINNIE_Ni2_", -0.00000001, 1181, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night2/IDOL_MINNIE_Ni2.txt",1183, 5, 2000000000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night2/min_night2_HybridAlexNet/IDOL_MINNIE_Ni2_", -0.00000001, 1181, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night2/IDOL_MINNIE_Ni2.txt",1183, 5, 2000000000);
 		//name= "MinnieNight2_HybridAlexNet";
 
-		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night3/min_night3_HybridAlexNet/IDOL_MINNIE_Ni3_", -0.00000001, 921, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night3/IDOL_MINNIE_Ni3.txt",1183, 5, 2000000000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night3/min_night3_HybridAlexNet/IDOL_MINNIE_Ni3_", -0.00000001, 921, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night3/IDOL_MINNIE_Ni3.txt",1183, 5, 2000000000);
 		//name= "MinnieNight3_HybridAlexNet";
 
-		//bm.readTags("/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night4/min_night4_HybridAlexNet/IDOL_MINNIE_Ni4_", -0.00000001, 864, "/media/08EEE2E805C5BFB2/KTH_IDOL/KTH_Minnie/min_night4/IDOL_MINNIE_Ni4.txt",1183, 5, 2000000000);
-		//name= "MinnieNight4_HybridAlexNet";
+		bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night4/min_night4_HybridAlexNet/IDOL_MINNIE_Ni4_", -0.00000001, 864, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_night4/IDOL_MINNIE_Ni4.txt",1183, 5, 2000000000);
+		name= "MinnieNight4_HybridAlexNet";
 
 
 		//Sunny
 				
-		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny1/min_sunny1_HybridAlexNet/IDOL_MINNIE_Su1_", -0.00000001, 853, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny1/IDOL_MINNIE_Su1.txt",1183, 5, 2000000000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_sunny1/min_sunny1_HybridAlexNet/IDOL_MINNIE_Su1_", -0.00000001, 853, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_sunny1/IDOL_MINNIE_Su1.txt",1183, 5, 2000000000);
 		//name= "MinnieSunny1_HybridAlexNet";
 				
 		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny2/min_sunny2_HybridAlexNet/IDOL_MINNIE_Su2_", -0.00000001, 849, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny2/IDOL_MINNIE_Su2.txt",1183, 5, 2000000000);
@@ -135,7 +140,7 @@ public class Gui extends JFrame implements ActionListener {
 		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny3/min_sunny3_HybridAlexNet/IDOL_MINNIE_Su3_", -0.00000001, 1014, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny3/IDOL_MINNIE_Su3.txt",1183, 5, 2000000000);
 		//name= "MinnieSunny3_HybridAlexNet";
 
-		//bm.readTags("/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny4/min_sunny4_HybridAlexNet/IDOL_MINNIE_Su4_", -0.00000001, 890, "/home/rvg/Descargas/KTH_IDOL/KTH_Minnie/min_sunny4/IDOL_MINNIE_Su4.txt",1183, 5, 2000000000);
+		//bm.readTags("/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_sunny4/min_sunny4_HybridAlexNet/IDOL_MINNIE_Su4_", -0.00000001, 890, "/home/jcarlos2289/Descargas/KTH_IDOL/KTH_Minnie/min_sunny4/IDOL_MINNIE_Su4.txt",1183, 5, 2000000000);
 		//name= "MinnieSunny4_HybridAlexNet";
 		
 			
@@ -216,7 +221,7 @@ public class Gui extends JFrame implements ActionListener {
 
 	public JPanel getToolBar() {
 		
-		 jmOperations = new JMenu();
+		    jmOperations = new JMenu();
 	        //jmOperations.addActionListener(this);
 	        jmOperations.setText("Operations");
 
@@ -246,6 +251,7 @@ public class Gui extends JFrame implements ActionListener {
 	        originalCB.addActionListener(this);
 	                
 	        graphCB = new javax.swing.JCheckBoxMenuItem("Graph");
+	        graphCB.addActionListener(this);
 	        graphCB.setSelected(true);
 	        graphCB.setEnabled(mapGenerated);
 	        
@@ -266,12 +272,19 @@ public class Gui extends JFrame implements ActionListener {
 	        clustersCB.setSelected(false);
 			clustersCB.setEnabled(false);
 			
+			highTagsCB = new JCheckBoxMenuItem("Show High Tag");
+			highTagsCB.setSelected(false);
+			highTagsCB.setEnabled(false);
+			highTagsCB.addActionListener(this);
+			
+			
 	                
 	        jmShows.add(originalCB);
 	        jmShows.add(graphCB);
 	        jmShows.add(backCB);
 	        jmShows.add(showNodesCB);
 	        jmShows.add(clustersCB);
+	        jmShows.add(highTagsCB);
 	        
 	        //JPanel jp2 = new JPanel();
 	        JMenuBar jMenuBar1 = new JMenuBar();
@@ -321,6 +334,13 @@ public class Gui extends JFrame implements ActionListener {
 		clusters.addActionListener(this);
 	//	jp.add(clusters);
 		
+		highTags = new JCheckBox("ShowHighTag");
+		highTags.setSelected(false);
+		highTags.setEnabled(false);
+		highTags.addActionListener(this);
+		//jp.add(highTags);
+		
+		
 		JLabel lab1 = new JLabel("Threshold1");
 		jp.add(lab1);
 		th1 = new JTextField(String.valueOf(threshold1));
@@ -348,6 +368,16 @@ public class Gui extends JFrame implements ActionListener {
 		nodes.addActionListener(this);
 		nodes.setEnabled(nodesMode);
 		jp.add(nodes);
+		
+		
+		String[] aux2 = {"Select Tag"};
+		tagList = new JComboBox<String>(aux2);
+		tagList.addActionListener(this);
+		tagList.setEnabled(tagMode); 
+		jp.add(tagList);
+		
+		
+		
 		return jp;
 	}
 
@@ -369,6 +399,35 @@ public class Gui extends JFrame implements ActionListener {
 
 		// FileMethods.saveFile(lst, "NodeList", false);
 	}
+	
+	public void genComboTag(){
+		int size = bm.dimension;
+		String[] aux = new String[size + 1];
+		aux[0] = "Select Tag";
+		
+		ImageTags auxImage;
+		
+		auxImage = bm.imgTags.get(0);
+		Set<String> keyset = auxImage.tags.keySet();
+		
+		ArrayList<String> keys =new ArrayList<String>();
+		
+		for (String object : keyset) {
+			keys.add(object);
+		}
+		
+		Collections.sort(keys);
+		
+		for (int i = 1; i < size + 1; i++) {
+			aux[i] =keys.get(i-1);
+		}
+		
+	
+		tagList.setModel(new DefaultComboBoxModel<String>(aux));
+		tagList.setSelectedIndex(0);
+		
+	}
+	
 
 	public static void main(String[] args) {
 		Gui g = new Gui();
@@ -377,69 +436,111 @@ public class Gui extends JFrame implements ActionListener {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		g.setVisible(true);
-		g.toFront();
+		 g.setVisible(true);
+	     g.toFront();
 		
-		String DATARESUME ;
-		
-		/*if (true)
-			DATARESUME="Th1;Th2;CN;Nodes;Edges;Metric\n";
-		else
-			DATARESUME="";*/
-		
-		float incremento = (float) 0.001;
-		float th1 = (float) 0.001;
-		float th2 = (float) 0.010;
-		int vuelta=1;
-		
-		
-		//DecimalFormatSymbols simbolos;
-        // Each tag contains a name and probability assigned to it by the recognition engine.
+		// Each tag contains a name and probability assigned to it by the recognition engine.
         //System.out.println(String.format("  %s (%.4f)", tag.getName(), tag.getProbability()));
+		
+		/*
+			
+		double val=0;
+        if (args.length ==0||args.length < 1){
+            System.out.println("Ingresa el Th2");
+            return;
+        }else
+            val = Double.parseDouble(args[0]);
+        
+        g.name+="_"+args[0];
+       
+        g.setTitle(g.name);
+        g.setVisible(true);
+        g.toFront();
+
+		/*
+		String DATARESUME ;
+        float incremento = (float) 0.001;
+        float th1 = (float) 0.001;
+        float th2 = (float) val;
+        int vuelta=1;
+        //DecimalFormatSymbols simbolos;
         DecimalFormatSymbols simbol = new DecimalFormatSymbols();
         simbol.setDecimalSeparator('.');
         DecimalFormat formateador = new DecimalFormat("####.######", simbol);
-        
-		for (int i = 0; i <40; i++) {
-			for (int j = 0; j <30; j++) {
-				g.bm.setThreshold1(th1);
-				g.bm.setThreshold2(th2);
-				g.bm.buildMap();
-				System.out.printf("i= %d\tj= %d\t Ciclo= %d\t th1= %.4f\t th2= %.4f\n", i,j,vuelta, th1, th2);
-				th1+=incremento;
-				
-						//String.format("%,6f",g.bm.threshold1)	
-				float metric = g.bm.map.getMapMetric(g.cm.MaxDistance());
-				DATARESUME=formateador.format(g.bm.threshold1)+ ";"
-				
-						+ formateador.format(g.bm.threshold2)+ ";"
-						+g.bm.cutNode+ ";"+g.bm.map.nodes.size()+ ";"
-						+g.bm.map.edges.size()+ ";"	
-						+g.bm.map.coefA+ ";"	
-						+g.bm.map.coefB+ ";"	
-						+g.bm.map.coefC+ ";"	
-						+g.bm.map.coefD+ ";"	
-						+g.bm.map.coefE+ ";"	
-						+metric+"\n";
-				FileMethods.saveFile(DATARESUME, g.name+"_MetricsData", true);
-				
-				++vuelta;
-				}
-			th2+=0.001;
-			th1=(float)  0.001;
-		}
-		g.setVisible(false);
-		g.dispose();
+       
+        for (int i = 0; i <1; i++) {
+            for (int j = 0; j <30; j++) {
+                g.bm.setThreshold1(th1);
+                g.bm.setThreshold2(th2);
+                g.bm.buildMap();
+                System.out.printf("i= %d\tj= %d\t Ciclo= %d/30\t th1= %.4f\t th2= %.4f\n", i,j,vuelta, th1, th2);
+                th1+=incremento;
+               
+                        //String.format("%,6f",g.bm.threshold1)   
+                float metric = g.bm.map.getMapMetric(g.cm.MaxDistance());
+                DATARESUME=formateador.format(g.bm.threshold1)+ ";"
+               
+                        + formateador.format(g.bm.threshold2)+ ";"
+                        +g.bm.cutNode+ ";"+g.bm.map.nodes.size()+ ";"
+                        +g.bm.map.edges.size()+ ";"   
+                        +g.bm.map.coefA+ ";"   
+                        +g.bm.map.coefB+ ";"   
+                        +g.bm.map.coefC+ ";"   
+                        +g.bm.map.coefD+ ";"   
+                        +g.bm.map.coefE+ ";"   
+                        +metric+"\n";
+                FileMethods.saveFile(DATARESUME, g.name+"_MetricsData", true);
+               
+                ++vuelta;
+                }
+            th2+=0.001;
+            th1=(float)  0.001;
+        }
+        //---------------------------Segunda Vuelta--------------------------
+       /*
+        incremento = (float) 0.001;
+        th1 = (float) 0.001;
+        th2 = (float) 0.038;
+        //vuelta=1;
+        //DecimalFormatSymbols simbolos;
+               
+        for (int i = 0; i <12; i++) {
+            for (int j = 0; j <30; j++) {
+                g.bm.setThreshold1(th1);
+                g.bm.setThreshold2(th2);
+                g.bm.buildMap();
+                System.out.printf("i= %d\tj= %d\t Ciclo= %d\t th1= %.4f\t th2= %.4f\n", i,j,vuelta, th1, th2);
+                th1+=incremento;
+               
+                        //String.format("%,6f",g.bm.threshold1)   
+                float metric = g.bm.map.getMapMetric(g.cm.MaxDistance());
+                DATARESUME=formateador.format(g.bm.threshold1)+ ";"
+               
+                        + formateador.format(g.bm.threshold2)+ ";"
+                        +g.bm.cutNode+ ";"+g.bm.map.nodes.size()+ ";"
+                        +g.bm.map.edges.size()+ ";"   
+                        +g.bm.map.coefA+ ";"   
+                        +g.bm.map.coefB+ ";"   
+                        +g.bm.map.coefC+ ";"   
+                        +g.bm.map.coefD+ ";"   
+                        +g.bm.map.coefE+ ";"   
+                        +metric+"\n";
+                FileMethods.saveFile(DATARESUME, g.name+"_MetricsData", true);
+               
+                ++vuelta;
+                }
+            th2+=0.001;
+            th1=(float)  0.001;
+        }
+               
+       */
+       // g.setVisible(false);
+      //  g.dispose();
 	
 		/*
 		System.out.println("Width-X= "+g.cm.getMaxWidth());
 		System.out.println("Heigth-Y= "+g.cm.getMaxHeight());
 		System.out.println("DMAX= " +g.cm.MaxDistance());
-		
-		
-		
-		
-		
 		
 		g.dispose();
 		
@@ -455,10 +556,15 @@ public class Gui extends JFrame implements ActionListener {
 			graphButton.setEnabled(true);
 			showNodes.setEnabled(true);
 			genComboNodes();
+			genComboTag();
+			
 			mapGenerated = true;
 			cm.repaint();
 			cm.showNodeDetails();
 			cm.showMapInfo();
+			
+				
+			
 			//String DATARESUME ="Th1;Th2;CN;Nodes;Edges;Metric\n";
 		//	float metric = bm.map.getMapMetric(cm.MaxDistance());
 			//DATARESUME+=bm.threshold1+ ";"+ bm.threshold2+ ";"+bm.cutNode+ ";"+bm.map.nodes.size()+ ";"+bm.map.edges.size()+ ";"+metric+"\n";
@@ -578,6 +684,20 @@ public class Gui extends JFrame implements ActionListener {
 			return;
 		}
 		
+		if (e.getSource() == tagList) {
+			if (((String) tagList.getSelectedItem()).equals("Select Tag")) {
+				selectedTag = null;
+			} else {
+				selectedTag = (String) tagList.getSelectedItem();
+				selectTagChanged = true;
+				tagMode =true;
+				nodesMode=false;
+				cm.repaint();
+			}
+			return;
+		}
+		
+		
 		
 		
 		//-*----------------------------------------------
@@ -608,6 +728,14 @@ public class Gui extends JFrame implements ActionListener {
 	            return;
 	        }
 	         
+	         if(e.getSource()== highTagsCB){
+	              	tagMode=highTags.isSelected();
+	        	// tagList.setEnabled(highTags.isSelected());
+	             
+	        	 cm.repaint();
+	        	 return;
+	         }
+	         
 	     	if (e.getSource() == clustersCB) {
 				showCluster = clustersCB.isSelected();
 				cm.repaint();
@@ -620,7 +748,13 @@ public class Gui extends JFrame implements ActionListener {
 	  			bm.buildMap();
 	  			graphCB.setEnabled(true);
 	  			showNodesCB.setEnabled(true);
+	  			//highTagsCB.setEnabled(true);
 	  			genComboNodes();
+	  			genComboTag();
+	  			tagList.setEnabled(true);
+	  			highTagsCB.setEnabled(true);
+	  			highTagsCB.setSelected(true);
+	  			tagMode =true;
 	  			mapGenerated = true;
 	  			cm.repaint();
 	  			cm.showNodeDetails();
